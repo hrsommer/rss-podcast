@@ -1,0 +1,30 @@
+# Einstellungen für den RSS-Podcast.
+# Diese Datei kannst du direkt auf GitHub bearbeiten. Änderungen gelten ab dem nächsten Lauf.
+
+podcast:
+  max_minutes: 30            # Obergrenze pro Folge. Bei wenig Inhalt wird die Folge kürzer.
+
+collection:
+  lookback_hours: 72         # Wie weit zurück Artikel gesammelt werden (für die Tests großzügig)
+  max_articles_per_feed: 25  # Mehr Artikel pro Feed werden ignoriert
+  fetch_full_text: true      # Bei Anrisstexten den ganzen Artikel von der Webseite holen
+  teaser_threshold_chars: 1200   # Feed-Texte unter dieser Länge gelten als Anrisstext
+  max_chars_per_article: 12000   # Sehr lange Artikel werden hier abgeschnitten
+
+limits:
+  max_input_chars: 300000    # Harte Obergrenze für alles, was an Claude geht (etwa 75.000 Tokens)
+  max_output_tokens: 20000   # Harte Obergrenze für Claudes Antwort
+  max_cost_per_run_usd: 0.50 # Lauf wird abgebrochen, wenn die Schätzung darüber liegt
+
+model:
+  name: claude-sonnet-5-5
+  price_input_per_mtok_usd: 2.0    # nur für die Kostenschätzung im Protokoll
+  price_output_per_mtok_usd: 10.0
+
+feeds:
+  - name: IEEE Spectrum
+    url: https://spectrum.ieee.org/feeds/type/news.rss
+  - name: Scientific American
+    url: https://www.scientificamerican.com/platform/syndication/rss
+  - name: Photonics Spectra
+    url: https://www.photonics.com/RSS.aspx

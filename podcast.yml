@@ -1,0 +1,40 @@
+name: "Podcast: Schritt 1 (Skript)"
+
+# Vorerst nur von Hand startbar: Actions -> "Podcast: Schritt 1 (Skript)" -> "Run workflow".
+# Der automatische Zeitplan kommt in Schritt 6.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  script:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Code holen
+        uses: actions/checkout@v5
+
+      - name: Python einrichten
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Pakete installieren
+        run: pip install -q -r requirements.txt
+
+      - name: Artikel sammeln und Skript schreiben
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python main.py
+
+      - name: Ergebnis zum Herunterladen bereitstellen
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ergebnis
+          path: out/
+          if-no-files-found: ignore
+          retention-days: 14
