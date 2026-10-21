@@ -10,6 +10,11 @@ collection:
   fetch_full_text: true      # Bei Anrisstexten den ganzen Artikel von der Webseite holen
   teaser_threshold_chars: 1200   # Feed-Texte unter dieser Länge gelten als Anrisstext
   max_chars_per_article: 12000   # Sehr lange Artikel werden hier abgeschnitten
+  exclude_title_patterns:    # Artikel, deren Titel einen dieser Texte enthält, werden gar nicht erst
+    - "Poem:"                # eingesammelt. Groß- und Kleinschreibung spielt keine Rolle.
+    - "crossword"
+    - "Math Puzzle"
+    - "Readers respond"
 
 limits:
   max_input_chars: 300000    # Harte Obergrenze für alles, was an Claude geht (etwa 75.000 Tokens)

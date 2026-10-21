@@ -57,7 +57,7 @@ def main() -> None:
         lines.append(f"\n{dropped} ältere Artikel wurden wegen der Textobergrenze weggelassen.")
     lines += ["", "## Artikel", ""]
     for a in articles:
-        kind = "Volltext" if a.full_text else "nur Anriss"
+        kind = "Volltext" if a.full_text else "nur Anriss" + (f" (Grund: {a.note})" if a.note else "")
         lines.append(f"- {a.id} | {a.source} | {a.published:%d.%m. %H:%M} | {kind}, {num(len(a.text))} Zeichen | [{a.title}]({a.url})")
     (OUT / "quellenbericht.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

@@ -92,14 +92,24 @@ def clean_for_speech(script: str) -> str:
 
 
 def link_shownotes(shownotes: str, articles: list[Article]) -> str:
-    """Ersetzt [A3] durch einen Markdown-Link auf den Originalartikel."""
+    """Ersetzt die Kennungen [A3] durch Links mit dem Artikeltitel als Linktext.
+
+    Aus  "- Solid-state transformers [A22]"
+    wird "- Solid-state transformers: [Why data centers are reviving ...](https://...) (Scientific American)"
+    """
     by_id = {a.id: a for a in articles}
-
-    def replace(match: re.Match) -> str:
-        article = by_id.get(match.group(1))
-        return f"[{article.source}]({article.url})" if article and article.url else ""
-
-    return re.sub(r"\[(A\d+)\]", replace, shownotes)
+    lines = []
+    for line in shownotes.splitlines():
+        refs = re.findall(r"\[(A\d+)\]", line)
+        text = re.sub(r"\s*\[A\d+\]", "", line).rstrip(" :")
+        links = []
+        for ref in refs:
+            article = by_id.get(ref)
+            if article and article.url:
+                title = article.title.replace("[", "(").replace("]", ")")
+                links.append(f"[{title}]({article.url}) ({article.source})")
+        lines.append(f"{text}: " + ", ".join(links) if links else text)
+    return "\n".join(lines)
 
 
 def estimate_cost(input_chars: int, max_output_tokens: int, model_cfg: dict) -> float:

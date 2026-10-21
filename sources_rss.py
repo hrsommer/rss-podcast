@@ -14,7 +14,8 @@ from __future__ import annotations
 
 import calendar
 import re
-from dataclasses import dataclass
+from collections import Counter
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
 import feedparser
@@ -36,6 +37,7 @@ class Article:
     text: str
     full_text: bool      # True = ganzer Artikel, False = nur Anrisstext
     id: str = ""         # Kurze Kennung wie "A7", wird später vergeben
+    note: str = ""       # Warum das Nachladen des Volltexts gescheitert ist (für den Quellenbericht)
 
 
 @dataclass
@@ -46,6 +48,7 @@ class FeedReport:
     message: str = ""
     articles: int = 0
     full_texts: int = 0
+    failures: Counter = field(default_factory=Counter)  # Gründe für gescheitertes Nachladen
 
 
 def html_to_text(html: str) -> str:
@@ -72,16 +75,32 @@ def entry_text(entry) -> str:
     return html_to_text(entry.get("summary", ""))
 
 
-def fetch_full_article(url: str) -> str | None:
-    """Holt die Webseite und schneidet mit trafilatura den eigentlichen Artikeltext heraus."""
+def fetch_full_article(url: str) -> tuple[str | None, str]:
+    """Holt die Webseite und schneidet mit trafilatura den eigentlichen Artikeltext heraus.
+
+    Gibt den Text zurück und, falls es nicht geklappt hat, eine kurze Begründung.
+    """
     try:
         response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT_SECONDS)
-        if response.status_code != 200:
-            return None
-        text = trafilatura.extract(response.text, include_comments=False, include_tables=False)
-        return text.strip() if text else None
-    except requests.RequestException:
-        return None
+    except requests.Timeout:
+        return None, "Zeitüberschreitung beim Abruf"
+    except requests.RequestException as error:
+        return None, f"nicht erreichbar ({type(error).__name__})"
+
+    if response.status_code != 200:
+        return None, f"Server antwortet mit Status {response.status_code}"
+    redirect = ""
+    final_url = getattr(response, "url", url) or url
+    if final_url.rstrip("/") != url.rstrip("/"):
+        redirect = f", weitergeleitet auf {final_url}"
+    content_type = getattr(response, "headers", {}).get("Content-Type", "text/html")
+    if "html" not in content_type:
+        return None, f"keine Webseite ({content_type}){redirect}"
+
+    text = trafilatura.extract(response.text, include_comments=False, include_tables=False)
+    if not text:
+        return None, f"kein Artikeltext in der Seite gefunden ({len(response.text):,} Zeichen HTML)".replace(",", ".") + f"{redirect}"
+    return text.strip(), ""
 
 
 def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Article], FeedReport]:
@@ -102,8 +121,9 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
         report.message = "kein gültiger Feed oder keine Einträge"
         return [], report
 
+    patterns = [p.lower() for p in settings.get("exclude_title_patterns") or []]
     articles: list[Article] = []
-    undated = 0
+    undated = excluded = 0
     for entry in parsed.entries[: settings["max_articles_per_feed"]]:
         published = entry_date(entry)
         if published is None:
@@ -112,27 +132,46 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
         if published <= since:
             continue
 
+        # Titelfilter: z. B. Rätsel oder Gedichte gar nicht erst einsammeln
+        title = html_to_text(entry.get("title", "(ohne Titel)"))
+        if any(pattern in title.lower() for pattern in patterns):
+            excluded += 1
+            continue
+
         text = entry_text(entry)
         link = entry.get("link", "")
         full = len(text) >= settings["teaser_threshold_chars"]
+        note = ""
         if not full and settings["fetch_full_text"] and link:
-            article_text = fetch_full_article(link)
+            article_text, note = fetch_full_article(link)
             if article_text and len(article_text) > len(text):
                 text, full = article_text, True
+            elif article_text:
+                note = f"gefundener Text ({len(article_text)} Zeichen) nicht länger als der Anriss"
+            if note:
+                report.failures[note.split(" (")[0].split(", weiter")[0]] += 1
 
         articles.append(Article(
             source=name,
-            title=html_to_text(entry.get("title", "(ohne Titel)")),
+            title=title,
             url=link,
             published=published,
             text=text[: settings["max_chars_per_article"]],
             full_text=full,
+            note=note,
         ))
 
     report.ok = True
     report.articles = len(articles)
     report.full_texts = sum(a.full_text for a in articles)
-    report.message = "ok" + (f", {undated} Einträge ohne Datum übersprungen" if undated else "")
+    notes = []
+    if excluded:
+        notes.append(f"{excluded} per Titelfilter übersprungen")
+    if undated:
+        notes.append(f"{undated} ohne Datum übersprungen")
+    for reason, count in report.failures.items():
+        notes.append(f"Volltext {count}× gescheitert: {reason}")
+    report.message = "ok" + (", " + ", ".join(notes) if notes else "")
     return articles, report
 
 
