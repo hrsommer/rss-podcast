@@ -7,13 +7,17 @@ Ablauf:
   3. Kosten vorab schätzen und abbrechen, falls sie über dem Limit liegen
   4. Claude schreibt Titel, Skript und Shownotes (script_writer.py)
   5. Ergebnisse im Ordner out/ speichern
+  6. Skript vorlesen lassen und als MP3 speichern (voice.py)
 
-Noch nicht enthalten (kommt in den nächsten Schritten): Vertonung, Feed,
+Mit "python main.py --nur-skript" wird Schritt 6 übersprungen, z. B. zum schnellen Testen.
+
+Noch nicht enthalten (kommt in den nächsten Schritten): Feed,
 Gedächtnis gegen Wiederholungen, Tiefen-Regler, Zeitplan.
 """
 
 from __future__ import annotations
 
+import argparse
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -23,6 +27,7 @@ import yaml
 
 from script_writer import WORDS_PER_MINUTE, estimate_cost, write_episode
 from sources_rss import collect_all
+from voice import synthesize
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "out"
@@ -36,6 +41,10 @@ def num(value: int) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--nur-skript", action="store_true", help="kein Audio erzeugen")
+    args = parser.parse_args()
+
     config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
     collection, limits = config["collection"], config["limits"]
 
@@ -96,6 +105,17 @@ def main() -> None:
     )
     (OUT / "skript.md").write_text(result, encoding="utf-8")
     print("Gespeichert: out/skript.md und out/quellenbericht.md")
+
+    # --- 5. Vorlesen lassen -----------------------------------------------------
+    if args.nur_skript:
+        print("Audio übersprungen (--nur-skript).")
+        return
+    voice = config["voice"]
+    print(f"Stimme {voice['name']} ({voice['engine']}) liest das Skript vor ...", flush=True)
+    audio = synthesize(episode.script, OUT / "folge.mp3", voice, title=episode.title)
+    minutes, seconds = divmod(round(audio.seconds), 60)
+    print(f"Gespeichert: out/folge.mp3, {minutes}:{seconds:02d} Minuten, "
+          f"{audio.size_bytes / 1_000_000:.1f} MB. Vorlesen dauerte {audio.render_seconds / 60:.1f} Minuten.")
 
 
 if __name__ == "__main__":

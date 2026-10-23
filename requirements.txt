@@ -4,3 +4,5 @@ requests>=2.31
 trafilatura>=2.0
 beautifulsoup4>=4.12
 pyyaml>=6.0
+kokoro-onnx>=0.4
+soundfile>=0.12

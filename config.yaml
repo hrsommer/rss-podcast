@@ -25,6 +25,13 @@ limits:
   max_output_tokens: 20000   # Harte Obergrenze für Claudes Antwort
   max_cost_per_run_usd: 0.50 # Lauf wird abgebrochen, wenn die Schätzung darüber liegt
 
+voice:
+  engine: kokoro             # Welches System vorliest. Später z. B. auch "openai"
+  name: af_heart             # Kokoro-Stimme (af_heart = amerikanisch, weiblich)
+  language: en-us
+  speed: 1.0                 # 1.1 = etwas schneller, 0.9 = etwas langsamer
+  pause_between_paragraphs: 0.6   # Sekunden Pause zwischen zwei Absätzen
+
 model:
   name: claude-sonnet-5-5
   price_input_per_mtok_usd: 2.0    # nur für die Kostenschätzung im Protokoll
