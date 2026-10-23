@@ -1,0 +1,83 @@
+{
+  "last_episode_utc": "2026-10-23T13:48:47.288230+00:00",
+  "articles": {
+    "https://www.scientificamerican.com/article/how-exposing-yourself-to-your-fears-can-tame-your-anxiety/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/23/1147628/the-download-testing-tech-promises-science-blind-spots/": "2026-10-23",
+    "https://hackaday.com/2026/10/23/when-you-cant-pick-between-electric-and-jet-power-this-buggy-has-you-covered/": "2026-10-23",
+    "https://www.scientificamerican.com/article/japans-mmx-mission-will-reveal-the-origins-of-weird-martian-moons/": "2026-10-23",
+    "https://www.scientificamerican.com/podcast/episode/how-the-brain-handles-uncertainty-and-why-resilience-matters/": "2026-10-23",
+    "https://www.scientificamerican.com/article/rfk-jr-promised-to-define-ultraprocessed-food-whats-taking-so-long/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/23/1147610/biotech-you-can-see-everything-theranos-holmes/": "2026-10-23",
+    "https://hackaday.com/2026/10/23/doom-ported-to-a-30-clamp-meter/": "2026-10-23",
+    "https://semiengineering.com/chip-industry-week-in-review-161/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/restoring-a-soviet-es-4001-mainframe-control-panel/": "2026-10-23",
+    "https://www.photonics.com/Articles/SurFunction-and-Precitec-Bring-Metasurface-Tech/p5/a72713": "2026-10-23",
+    "https://hackaday.com/2026/10/22/nasa-batteries-survive-extreme-cold-and-heat/": "2026-10-23",
+    "https://www.photonics.com/Articles/Plasma-Antenna-Transmits-RF-Waves-for-Air-and/p5/a72696": "2026-10-23",
+    "https://hackaday.com/2026/10/22/cars-camera-footage-backed-up-to-nas/": "2026-10-23",
+    "https://www.scientificamerican.com/article/heres-what-modernas-latest-mrna-cancer-vaccine-data-actually-show/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/an-open-source-linear-capacitive-encoder/": "2026-10-23",
+    "https://www.scientificamerican.com/article/rfk-jr-adviser-calley-means-announces-his-resignation-from-the-trump-administration/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/keeping-old-wi-fi-radios-alive-with-stream-conversion/": "2026-10-23",
+    "https://www.scientificamerican.com/article/this-implant-burns-up-excess-blood-sugar-with-electricity/": "2026-10-23",
+    "https://www.scientificamerican.com/article/data-centers-are-a-target-of-modern-warfare-how-do-we-secure-the-infrastructure-that-runs-our-digital-lives/": "2026-10-23",
+    "https://www.scientificamerican.com/article/the-inside-story-behind-openais-million-dollar-math-proof/": "2026-10-23",
+    "https://www.scientificamerican.com/article/astronomers-unlock-a-mystery-hidden-in-van-goghs-the-starry-night/": "2026-10-23"
+  },
+  "stories": [
+    {
+      "date": "2026-10-23",
+      "summary": "Moderna and Merck mRNA melanoma vaccine phase 3 results"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "OpenAI's Navier-Stokes proof and the dispute with Tristan Buckmaster"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Japan's MMX mission to Phobos launches"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Data centers as targets in modern warfare"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "ECHO implant burns excess blood sugar in mice"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Chip industry week in review"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "RFK Jr.'s stalled ultraprocessed food definition"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Calley Means resigns from the Trump administration"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Short news: Warhound, Starlink, PHP flaw, prime editing, Google, Kushner, ice age, solar flares, cheap EV"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Short news: LITILIT laser factory and NC State plasma antenna"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Van Gogh's Starry Night and the Hyades"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Hackaday roundup: turbine sand rail, DOOM on a clamp meter, NASA batteries, Soviet mainframe panel, Wi-Fi radio converter"
+    },
+    {
+      "date": "2026-10-23",
+      "summary": "Further reads: exposure therapy, brain as prediction engine, Elizabeth Holmes documentary"
+    }
+  ]
+}
