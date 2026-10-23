@@ -5,7 +5,11 @@
 #   fetch_full_text: false   -> für diesen Feed nie versuchen, den ganzen Artikel nachzuladen
 
 podcast:
+  title: "Holger’s Daily Tech Briefing"
+  author: Holger
+  description: "A private daily briefing on technology and science, generated from my favorite feeds."
   max_minutes: 30            # Obergrenze pro Folge. Bei wenig Inhalt wird die Folge kürzer.
+  keep_episodes: 10          # So viele Folgen bleiben im Feed, ältere werden gelöscht
 
 collection:
   lookback_hours: 24         # Wie weit zurück Artikel gesammelt werden (24 = wie eine echte Tagesfolge)

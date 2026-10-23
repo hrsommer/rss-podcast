@@ -8,10 +8,11 @@ Ablauf:
   4. Claude schreibt Titel, Skript und Shownotes (script_writer.py)
   5. Ergebnisse im Ordner out/ speichern
   6. Skript vorlesen lassen und als MP3 speichern (voice.py)
+  7. Mit --veroeffentlichen: Folge und Feed im Ordner site/ ablegen (publish.py)
 
-Mit "python main.py --nur-skript" wird Schritt 6 übersprungen, z. B. zum schnellen Testen.
+Mit "python main.py --nur-skript" wird ab Schritt 6 alles übersprungen, z. B. zum schnellen Testen.
 
-Noch nicht enthalten (kommt in den nächsten Schritten): Feed,
+Noch nicht enthalten (kommt in den nächsten Schritten):
 Gedächtnis gegen Wiederholungen, Tiefen-Regler, Zeitplan.
 """
 
@@ -27,6 +28,7 @@ import yaml
 
 from script_writer import WORDS_PER_MINUTE, estimate_cost, write_episode
 from sources_rss import collect_all
+from publish import publish_episode
 from voice import synthesize
 
 ROOT = Path(__file__).resolve().parent
@@ -42,7 +44,8 @@ def num(value: int) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--nur-skript", action="store_true", help="kein Audio erzeugen")
+    parser.add_argument("--nur-skript", action="store_true", help="kein Audio erzeugen, nichts veröffentlichen")
+    parser.add_argument("--veroeffentlichen", action="store_true", help="Folge in den Podcast-Feed stellen")
     args = parser.parse_args()
 
     config = yaml.safe_load((ROOT / "config.yaml").read_text(encoding="utf-8"))
@@ -116,6 +119,12 @@ def main() -> None:
     minutes, seconds = divmod(round(audio.seconds), 60)
     print(f"Gespeichert: out/folge.mp3, {minutes}:{seconds:02d} Minuten, "
           f"{audio.size_bytes / 1_000_000:.1f} MB. Vorlesen dauerte {audio.render_seconds / 60:.1f} Minuten.")
+
+    # --- 6. Veröffentlichen -----------------------------------------------------
+    if args.veroeffentlichen:
+        feed = publish_episode(OUT / "folge.mp3", episode.title, episode.shownotes,
+                               audio.seconds, today, config["podcast"])
+        print(f"Veröffentlicht. Feed: {feed}")
 
 
 if __name__ == "__main__":
