@@ -12,7 +12,6 @@ Ablauf:
 
 Mit "python main.py --nur-skript" wird ab Schritt 6 alles übersprungen, z. B. zum schnellen Testen.
 
-Noch nicht enthalten (kommt im nächsten Schritt): Zeitplan.
 """
 
 from __future__ import annotations
