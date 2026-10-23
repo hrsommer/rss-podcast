@@ -122,8 +122,10 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
         return [], report
 
     patterns = [p.lower() for p in settings.get("exclude_title_patterns") or []]
+    fetch_enabled = feed.get("fetch_full_text", settings["fetch_full_text"])  # Feed-Einstellung hat Vorrang
+    min_chars = settings.get("min_chars", 0)
     articles: list[Article] = []
-    undated = excluded = 0
+    undated = excluded = too_short = 0
     for entry in parsed.entries[: settings["max_articles_per_feed"]]:
         published = entry_date(entry)
         if published is None:
@@ -142,14 +144,23 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
         link = entry.get("link", "")
         full = len(text) >= settings["teaser_threshold_chars"]
         note = ""
-        if not full and settings["fetch_full_text"] and link:
+        if not full and not fetch_enabled:
+            note = "Nachladen für diesen Feed abgeschaltet"
+        elif not full and link:
             article_text, note = fetch_full_article(link)
-            if article_text and len(article_text) > len(text):
-                text, full = article_text, True
-            elif article_text:
-                note = f"gefundener Text ({len(article_text)} Zeichen) nicht länger als der Anriss"
+            if article_text:
+                # Die Webseite hat den Artikel geliefert. Ist er nicht länger als der Feed-Text,
+                # stand schon im Feed der ganze (kurze) Artikel. Beides gilt als Volltext.
+                if len(article_text) > len(text):
+                    text = article_text
+                full = True
             if note:
                 report.failures[note.split(" (")[0].split(", weiter")[0]] += 1
+
+        # Sicherheitsnetz: Einträge ohne nennenswerten Inhalt (z. B. nur eine Überschrift)
+        if len(text) < min_chars:
+            too_short += 1
+            continue
 
         articles.append(Article(
             source=name,
@@ -167,6 +178,10 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
     notes = []
     if excluded:
         notes.append(f"{excluded} per Titelfilter übersprungen")
+    if too_short:
+        notes.append(f"{too_short} mit zu wenig Text übersprungen")
+    if not fetch_enabled:
+        notes.append("Nachladen abgeschaltet")
     if undated:
         notes.append(f"{undated} ohne Datum übersprungen")
     for reason, count in report.failures.items():

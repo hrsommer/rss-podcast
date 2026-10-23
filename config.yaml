@@ -1,5 +1,8 @@
 # Einstellungen für den RSS-Podcast.
 # Diese Datei kannst du direkt auf GitHub bearbeiten. Änderungen gelten ab dem nächsten Lauf.
+#
+# Feeds: unten bei "feeds" je zwei Zeilen (name und url). Optional pro Feed:
+#   fetch_full_text: false   -> für diesen Feed nie versuchen, den ganzen Artikel nachzuladen
 
 podcast:
   max_minutes: 30            # Obergrenze pro Folge. Bei wenig Inhalt wird die Folge kürzer.
@@ -10,6 +13,7 @@ collection:
   fetch_full_text: true      # Bei Anrisstexten den ganzen Artikel von der Webseite holen
   teaser_threshold_chars: 1200   # Feed-Texte unter dieser Länge gelten als Anrisstext
   max_chars_per_article: 12000   # Sehr lange Artikel werden hier abgeschnitten
+  min_chars: 150             # Einträge mit weniger Text (z. B. nur eine Überschrift) werden übersprungen
   exclude_title_patterns:    # Artikel, deren Titel einen dieser Texte enthält, werden gar nicht erst
     - "Poem:"                # eingesammelt. Groß- und Kleinschreibung spielt keine Rolle.
     - "crossword"
@@ -33,6 +37,7 @@ feeds:
     url: https://www.scientificamerican.com/platform/syndication/rss
   - name: Photonics Spectra
     url: https://www.photonics.com/RSS.aspx
+    fetch_full_text: false   # Seite verweigert das Nachladen (Status 403), Anrisstexte reichen
   - name: MIT Technology Review
     url: https://www.technologyreview.com/feed
   - name: Hackaday

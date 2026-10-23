@@ -31,11 +31,16 @@ How to write the script:
 and mention different angles briefly.
 - Give a broad overview. Cover the most significant stories first and with a bit more context, smaller items briefly. \
 Routine corporate news (appointments, small deals) gets at most one sentence or is skipped.
-- For teaser-only articles, stay brief and do not guess beyond what the teaser says.
+- Short news: some items carry little information, namely teaser-only articles (full_text="no") and the \
+one- or two-sentence items in roundup or digest articles (lists of headlines with links to other outlets). \
+Treat each of these as a short news item: one or two sentences, with clear attribution ("according to Reuters"). \
+Never embellish them: no background, context, numbers or interpretation that is not in the text you received. \
+Collect them in a "short news" block near the end, unless the same story is also covered in depth elsewhere.
 - For each story: what happened and why it matters. Explain unfamiliar jargon in a few words the first time.
 - Only use facts from the articles. Do not invent details, numbers or quotes. Attribute where helpful.
 - Structure: short greeting with the date, a quick overview of the top stories (about 20 seconds), \
-the stories with clear spoken transitions, then a recap of the three most important takeaways and a short sign-off.
+the main stories with clear spoken transitions, then the short news block, \
+then a recap of the three most important takeaways and a short sign-off.
 - Written for the ear: short sentences, no lists, no headings, no markdown, no emojis, no URLs, no article ids, \
 no stage directions. Write symbols as words (percent, dollars). Avoid long strings of numbers.
 - Length: as long as the news deserves, but at most {max_words} words (about {max_minutes} minutes). \
