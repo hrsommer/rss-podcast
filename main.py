@@ -2,8 +2,8 @@
 RSS-Podcast, Schritt 1: Artikel einsammeln und ein Skript schreiben lassen.
 
 Ablauf:
-  1. Einstellungen aus config.yaml lesen
-  2. Artikel aus allen Feeds einsammeln (sources_rss.py)
+  1. Einstellungen aus config.yaml und das Gedächtnis lesen (memory.py)
+  2. Artikel seit der letzten Folge einsammeln (sources_rss.py)
   3. Kosten vorab schätzen und abbrechen, falls sie über dem Limit liegen
   4. Claude schreibt Titel, Skript und Shownotes (script_writer.py)
   5. Ergebnisse im Ordner out/ speichern
@@ -12,23 +12,23 @@ Ablauf:
 
 Mit "python main.py --nur-skript" wird ab Schritt 6 alles übersprungen, z. B. zum schnellen Testen.
 
-Noch nicht enthalten (kommt in den nächsten Schritten):
-Gedächtnis gegen Wiederholungen, Tiefen-Regler, Zeitplan.
+Noch nicht enthalten (kommt in den nächsten Schritten): Tiefen-Regler, Zeitplan.
 """
 
 from __future__ import annotations
 
 import argparse
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import yaml
 
+import memory as mem
 from script_writer import WORDS_PER_MINUTE, estimate_cost, write_episode
 from sources_rss import collect_all
-from publish import publish_episode
+from publish import SITE, publish_episode
 from voice import synthesize
 
 ROOT = Path(__file__).resolve().parent
@@ -53,18 +53,30 @@ def main() -> None:
 
     now = datetime.now(timezone.utc)
     today = now.astimezone(TIMEZONE)
-    since = now - timedelta(hours=collection["lookback_hours"])
     OUT.mkdir(exist_ok=True)
 
-    # --- 1. Artikel einsammeln --------------------------------------------------
-    print(f"Sammle Artikel seit {since:%Y-%m-%d %H:%M} UTC ...", flush=True)
-    articles, reports, dropped = collect_all(config["feeds"], since, collection, limits["max_input_chars"])
+    # --- 1. Gedächtnis lesen und Artikel einsammeln -----------------------------
+    memory = mem.load(SITE)
+    memory_days = config["memory"]["days"]
+    since = mem.collection_start(memory, now, collection)
+    recent = mem.recent_stories(memory, now, memory_days)
+    since_local = since.astimezone(TIMEZONE)
+    origin = "seit der letzten Folge" if memory.get("last_episode_utc") else "erster Lauf"
+    print(f"Sammle Artikel seit {since_local:%d.%m. %H:%M} Uhr ({origin}). "
+          f"Gedächtnis: {len(recent)} Themen der letzten {memory_days} Tage.", flush=True)
+    articles, reports, dropped, already_used = collect_all(
+        config["feeds"], since, collection, limits["max_input_chars"], skip_urls=mem.used_urls(memory))
 
-    lines = [f"# Quellenbericht {today:%Y-%m-%d %H:%M}", "", "## Feeds", ""]
+    lines = [f"# Quellenbericht {today:%Y-%m-%d %H:%M}", "",
+             f"Artikel seit {since_local:%d.%m.%Y %H:%M} Uhr ({origin}). "
+             f"Gedächtnis: {len(recent)} Themen aus den letzten {memory_days} Tagen.", "", "## Feeds", ""]
     for r in reports:
         status = "OK" if r.ok else "FEHLER"
         lines.append(f"- **{r.name}** ({status}): {r.articles} Artikel, davon {r.full_texts} mit Volltext. {r.message}")
         print(f"  {r.name}: {status}, {r.articles} Artikel ({r.full_texts} Volltext). {r.message}", flush=True)
+    if already_used:
+        lines.append(f"\n{already_used} Artikel wurden schon in einer früheren Folge verwendet und übersprungen.")
+        print(f"  {already_used} Artikel schon in einer früheren Folge verwendet, übersprungen.", flush=True)
     if dropped:
         lines.append(f"\n{dropped} ältere Artikel wurden wegen der Textobergrenze weggelassen.")
     lines += ["", "## Artikel", ""]
@@ -87,7 +99,7 @@ def main() -> None:
 
     # --- 3. Skript schreiben ----------------------------------------------------
     print(f"Claude ({config['model']['name']}) schreibt das Skript ...", flush=True)
-    episode = write_episode(articles, today, config)
+    episode = write_episode(articles, today, config, recent)
 
     model = config["model"]
     cost = (episode.input_tokens * model["price_input_per_mtok_usd"]
@@ -124,7 +136,10 @@ def main() -> None:
     if args.veroeffentlichen:
         feed = publish_episode(OUT / "folge.mp3", episode.title, episode.shownotes,
                                audio.seconds, today, config["podcast"])
+        mem.update(SITE, memory, now, today.date().isoformat(),
+                   [a.url for a in articles if a.url], episode.shownotes, memory_days)
         print(f"Veröffentlicht. Feed: {feed}")
+        print(f"Gedächtnis aktualisiert: {len(articles)} Artikel und die Themen dieser Folge gemerkt.")
 
 
 if __name__ == "__main__":

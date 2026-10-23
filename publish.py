@@ -101,8 +101,8 @@ def publish_episode(mp3: Path, title: str, shownotes_md: str, seconds: float,
     file = f"episodes/{stamp}.mp3"
     shutil.copy(mp3, SITE / file)
 
-    # Mehrere Läufe am selben Tag (z. B. beim Testen): die neuere Folge ersetzt die ältere
-    episodes = [e for e in episodes if e["day"] != day]
+    # Jeder Lauf ist eine eigene Folge. Dank Gedächtnis enthält ein zweiter Lauf am selben Tag
+    # nur die Artikel, die seit dem ersten dazugekommen sind, ersetzt ihn also nicht.
     episodes.insert(0, {
         "day": day,
         "guid": f"episode-{stamp}",   # eindeutig pro Lauf, damit Pocket Casts neue Folgen sicher erkennt

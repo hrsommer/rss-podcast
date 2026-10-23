@@ -190,9 +190,14 @@ def collect_feed(feed: dict, since: datetime, settings: dict) -> tuple[list[Arti
     return articles, report
 
 
-def collect_all(feeds: list[dict], since: datetime, settings: dict, max_total_chars: int
-                ) -> tuple[list[Article], list[FeedReport], int]:
-    """Sammelt alle Feeds ein. Gibt Artikel, Feed-Berichte und die Zahl verworfener Artikel zurück."""
+def collect_all(feeds: list[dict], since: datetime, settings: dict, max_total_chars: int,
+                skip_urls: set[str] | None = None) -> tuple[list[Article], list[FeedReport], int, int]:
+    """Sammelt alle Feeds ein.
+
+    Gibt zurück: Artikel, Feed-Berichte, Zahl der wegen der Textobergrenze verworfenen Artikel
+    und Zahl der Artikel, die schon in einer früheren Folge verwendet wurden (skip_urls).
+    """
+    skip_urls = skip_urls or set()
     all_articles: list[Article] = []
     reports: list[FeedReport] = []
     for feed in feeds:
@@ -204,7 +209,9 @@ def collect_all(feeds: list[dict], since: datetime, settings: dict, max_total_ch
     unique: dict[str, Article] = {}
     for article in all_articles:
         unique.setdefault(article.url or f"{article.source}:{article.title}", article)
-    articles = sorted(unique.values(), key=lambda a: a.published, reverse=True)
+    already_used = [a for a in unique.values() if a.url in skip_urls]
+    articles = sorted((a for a in unique.values() if a.url not in skip_urls),
+                      key=lambda a: a.published, reverse=True)
 
     # Harte Obergrenze für die Textmenge: neueste Artikel zuerst, der Rest fällt weg
     kept, total = [], 0
@@ -217,4 +224,4 @@ def collect_all(feeds: list[dict], since: datetime, settings: dict, max_total_ch
 
     for number, article in enumerate(kept, 1):
         article.id = f"A{number}"
-    return kept, reports, dropped
+    return kept, reports, dropped, len(already_used)

@@ -36,6 +36,9 @@ one- or two-sentence items in roundup or digest articles (lists of headlines wit
 Treat each of these as a short news item: one or two sentences, with clear attribution ("according to Reuters"). \
 Never embellish them: no background, context, numbers or interpretation that is not in the text you received. \
 Collect them in a "short news" block near the end, unless the same story is also covered in depth elsewhere.
+- Recent episodes: the stories of the last days are listed in <recent_episodes>. Do not repeat them. \
+Mention one again only if today's articles contain a genuine new development. Then present it briefly as an \
+update ("On Tuesday we covered X. Now ...") and focus on what is new, without retelling the background.
 - For each story: what happened and why it matters. Explain unfamiliar jargon in a few words the first time.
 - Only use facts from the articles. Do not invent details, numbers or quotes. Attribute where helpful.
 - Structure: short greeting with the date, a quick overview of the top stories (about 20 seconds), \
@@ -66,7 +69,7 @@ class Episode:
     truncated: bool         # True, wenn Claudes Antwort an der Obergrenze abgeschnitten wurde
 
 
-def build_prompt(articles: list[Article], today: datetime) -> str:
+def build_prompt(articles: list[Article], today: datetime, recent: list[dict] | None = None) -> str:
     blocks = []
     for a in articles:
         blocks.append(
@@ -74,8 +77,16 @@ def build_prompt(articles: list[Article], today: datetime) -> str:
             f'full_text="{"yes" if a.full_text else "no"}">\n'
             f"<title>{a.title}</title>\n<content>\n{a.text}\n</content>\n</article>"
         )
+    if recent:
+        listed = "\n".join(
+            f"- {datetime.fromisoformat(r['date']):%A, %B} {datetime.fromisoformat(r['date']).day}: {r['summary']}"
+            for r in recent
+        )
+    else:
+        listed = "(none yet)"
     return (
         f"Today is {today:%A, %B} {today.day}, {today.year}.\n\n"
+        f"<recent_episodes>\n{listed}\n</recent_episodes>\n\n"
         "<articles>\n" + "\n\n".join(blocks) + "\n</articles>\n\n"
         "Write today's episode now, in the required format."
     )
@@ -124,10 +135,11 @@ def estimate_cost(input_chars: int, max_output_tokens: int, model_cfg: dict) -> 
             + max_output_tokens * model_cfg["price_output_per_mtok_usd"]) / 1_000_000
 
 
-def write_episode(articles: list[Article], today: datetime, config: dict) -> Episode:
+def write_episode(articles: list[Article], today: datetime, config: dict,
+                  recent: list[dict] | None = None) -> Episode:
     max_minutes = config["podcast"]["max_minutes"]
     system = SYSTEM_PROMPT.format(max_words=max_minutes * WORDS_PER_MINUTE, max_minutes=max_minutes)
-    prompt = build_prompt(articles, today)
+    prompt = build_prompt(articles, today, recent)
 
     client = anthropic.Anthropic(max_retries=3)
     with client.messages.stream(
