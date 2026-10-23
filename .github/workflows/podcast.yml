@@ -1,8 +1,11 @@
 name: "Podcast: Folge erstellen"
 
-# Vorerst nur von Hand startbar: Actions -> "Podcast: Folge erstellen" -> "Run workflow".
-# Der automatische Zeitplan kommt in Schritt 6.
+# Startet automatisch Montag bis Freitag um 02:17 UTC
+# (= 03:17 Uhr deutscher Winterzeit, 04:17 Uhr Sommerzeit).
+# Von Hand startbar: Actions -> "Podcast: Folge erstellen" -> "Run workflow".
 on:
+  schedule:
+    - cron: "17 2 * * 1-5"
   workflow_dispatch:
     inputs:
       audio:
@@ -64,7 +67,7 @@ jobs:
           retention-days: 14
 
       - name: Auf GitHub Pages hochladen
-        if: inputs.audio != false
+        if: always()   # auch nach Fehlern, damit die Kostenliste (costs.json) erhalten bleibt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
