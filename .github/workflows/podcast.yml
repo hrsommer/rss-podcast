@@ -6,12 +6,16 @@ on:
   workflow_dispatch:
     inputs:
       audio:
-        description: "Audio erzeugen (ausschalten für einen schnellen Test nur mit Skript)"
+        description: "Audio erzeugen und veröffentlichen (ausschalten für einen schnellen Test nur mit Skript)"
         type: boolean
         default: true
 
 permissions:
-  contents: read
+  contents: write   # nötig, um die Folgen auf den Branch gh-pages zu schreiben
+
+concurrency:
+  group: podcast    # nie zwei Läufe gleichzeitig
+  cancel-in-progress: false
 
 jobs:
   episode:
@@ -20,6 +24,13 @@ jobs:
     steps:
       - name: Code holen
         uses: actions/checkout@v5
+
+      - name: Bisherige Folgen holen (beim allerersten Lauf rot, das ist normal)
+        uses: actions/checkout@v5
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: site
 
       - name: Python einrichten
         uses: actions/setup-python@v6
@@ -33,14 +44,14 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           pip install -q -r requirements.txt
 
-      - name: Artikel sammeln, Skript schreiben, vorlesen
+      - name: Artikel sammeln, Skript schreiben, vorlesen, veröffentlichen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ "${{ inputs.audio }}" = "false" ]; then
             python main.py --nur-skript
           else
-            python main.py
+            python main.py --veroeffentlichen
           fi
 
       - name: Ergebnis zum Herunterladen bereitstellen
@@ -51,3 +62,19 @@ jobs:
           path: out/
           if-no-files-found: ignore
           retention-days: 14
+
+      - name: Auf GitHub Pages hochladen
+        if: inputs.audio != false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -f site/feed.xml ]; then echo "Noch nichts zu veröffentlichen."; exit 0; fi
+          rm -rf site/.git
+          cd site
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Folge vom $(date -u +%F)"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          echo "Hochgeladen. Feed: https://hrsommer.github.io/rss-podcast/feed.xml"
