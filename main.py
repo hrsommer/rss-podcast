@@ -4,7 +4,7 @@ RSS-Podcast, Schritt 1: Artikel einsammeln und ein Skript schreiben lassen.
 Ablauf:
   1. Einstellungen aus config.yaml und das Gedächtnis lesen (memory.py)
   2. Artikel seit der letzten Folge einsammeln (sources_rss.py)
-  3. Kosten vorab schätzen und abbrechen, falls sie über dem Limit liegen
+  3. Kostenbremsen prüfen: Kosten pro Lauf, Läufe pro Tag, Monatsbudget (budget.py)
   4. Claude schreibt Titel, Skript und Shownotes (script_writer.py)
   5. Ergebnisse im Ordner out/ speichern
   6. Skript vorlesen lassen und als MP3 speichern (voice.py)
@@ -12,7 +12,7 @@ Ablauf:
 
 Mit "python main.py --nur-skript" wird ab Schritt 6 alles übersprungen, z. B. zum schnellen Testen.
 
-Noch nicht enthalten (kommt in den nächsten Schritten): Tiefen-Regler, Zeitplan.
+Noch nicht enthalten (kommt im nächsten Schritt): Zeitplan.
 """
 
 from __future__ import annotations
@@ -25,6 +25,7 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+import budget
 import memory as mem
 from script_writer import WORDS_PER_MINUTE, estimate_cost, write_episode
 from sources_rss import collect_all
@@ -92,10 +93,14 @@ def main() -> None:
     # --- 2. Kostenbremse vor dem Aufruf -----------------------------------------
     input_chars = sum(len(a.text) for a in articles)
     worst_case = estimate_cost(input_chars, limits["max_output_tokens"], config["model"])
-    print(f"{len(articles)} Artikel, {num(input_chars)} Zeichen. Höchstens etwa {worst_case:.2f} $ für diesen Lauf.", flush=True)
-    if worst_case > limits["max_cost_per_run_usd"]:
-        sys.exit(f"Abbruch: geschätzte Kosten {worst_case:.2f} $ liegen über dem Limit "
-                 f"von {limits['max_cost_per_run_usd']:.2f} $ (config.yaml, limits).")
+    runs = budget.load(SITE)
+    print(f"{len(articles)} Artikel, {num(input_chars)} Zeichen. Höchstens etwa {worst_case:.2f} $ für diesen Lauf. "
+          f"Monat bisher: {budget.month_total(runs, today):.2f} $ von {limits['monthly_budget_usd']:.2f} $, "
+          f"heute {budget.runs_today(runs, today)} von {limits['max_runs_per_day']} Läufen.", flush=True)
+    try:
+        budget.check(runs, today, worst_case, limits)
+    except budget.BudgetExceeded as reason:
+        sys.exit(f"Abbruch durch Kostenbremse: {reason}")
 
     # --- 3. Skript schreiben ----------------------------------------------------
     print(f"Claude ({config['model']['name']}) schreibt das Skript ...", flush=True)
@@ -104,9 +109,10 @@ def main() -> None:
     model = config["model"]
     cost = (episode.input_tokens * model["price_input_per_mtok_usd"]
             + episode.output_tokens * model["price_output_per_mtok_usd"]) / 1_000_000
+    runs = budget.record(SITE, runs, today, cost, "nur Skript" if args.nur_skript else "Folge")
     words = len(episode.script.split())
     print(f"Fertig: „{episode.title}“, {num(words)} Wörter (etwa {words / WORDS_PER_MINUTE:.0f} Minuten). "
-          f"Tatsächliche Kosten etwa {cost:.2f} $.", flush=True)
+          f"Tatsächliche Kosten etwa {cost:.2f} $, Monat bisher {budget.month_total(runs, today):.2f} $.", flush=True)
     if episode.truncated:
         print("Warnung: Claudes Antwort wurde an der Obergrenze abgeschnitten (limits.max_output_tokens).")
 

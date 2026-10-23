@@ -9,6 +9,8 @@ podcast:
   author: Holger
   description: "A private daily briefing on technology and science, generated from my favorite feeds."
   max_minutes: 30            # Obergrenze pro Folge. Bei wenig Inhalt wird die Folge kürzer.
+  depth: 2                   # Tiefe von 1 bis 5: 1 = reine Schlagzeilen, 2 = Schlagzeilen mit kurzer
+                             # Einordnung, 3 = ausgewogen, 4 = vertiefend, 5 = Analyse weniger Themen
   keep_episodes: 10          # So viele Folgen bleiben im Feed, ältere werden gelöscht
 
 collection:
@@ -30,6 +32,8 @@ limits:
   max_input_chars: 300000    # Harte Obergrenze für alles, was an Claude geht (etwa 75.000 Tokens)
   max_output_tokens: 20000   # Harte Obergrenze für Claudes Antwort
   max_cost_per_run_usd: 0.50 # Lauf wird abgebrochen, wenn die Schätzung darüber liegt
+  monthly_budget_usd: 15.0   # Höchstens so viel pro Kalendermonat für Claude
+  max_runs_per_day: 3        # Höchstens so viele Läufe pro Tag, die Claude aufrufen
 
 memory:
   days: 14                   # So lange merkt sich der Podcast, welche Themen schon vorkamen

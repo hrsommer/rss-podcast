@@ -29,7 +29,8 @@ How to write the script:
 - English, one host, news briefing style. Conversational but precise, like a good morning radio show.
 - Organize by STORY, not by source. If several articles cover the same news, merge them into one segment \
 and mention different angles briefly.
-- Give a broad overview. Cover the most significant stories first and with a bit more context, smaller items briefly. \
+- Depth: {depth_instruction} Depth never means adding facts: going deeper means explaining and connecting \
+what the articles say, not adding outside knowledge. Cover the most significant stories first. \
 Routine corporate news (appointments, small deals) gets at most one sentence or is skipped.
 - Short news: some items carry little information, namely teaser-only articles (full_text="no") and the \
 one- or two-sentence items in roundup or digest articles (lists of headlines with links to other outlets). \
@@ -57,6 +58,22 @@ The full spoken script, paragraphs separated by blank lines.
 <shownotes>
 - One line per story, in the order of the episode, followed by the ids of its articles, e.g. [A3] [A7]
 </shownotes>"""
+
+
+# Was der Tiefen-Regler (config.yaml, podcast.depth) für Claude bedeutet
+DEPTH_INSTRUCTIONS = {
+    1: "level 1 of 5, headlines only. Cover as many stories as possible, each in two to four sentences: "
+       "what happened and one sentence on why it matters. No deep dives.",
+    2: "level 2 of 5, headlines with short context. Give a broad overview: most stories get a short paragraph "
+       "(what happened, why it matters). The two or three biggest stories may get a little more context.",
+    3: "level 3 of 5, balanced. The three most important stories get real depth: background, implications "
+       "and different angles. Everything else is covered briefly.",
+    4: "level 4 of 5, in-depth. Focus on the five or six most important stories with background and implications. "
+       "Everything else goes into the short news block or is skipped.",
+    5: "level 5 of 5, analysis. Pick the two or three most important stories and analyze them thoroughly: "
+       "background, how it works, implications, open questions and what to watch next. "
+       "Everything else only as one-sentence items in the short news block.",
+}
 
 
 @dataclass
@@ -138,7 +155,9 @@ def estimate_cost(input_chars: int, max_output_tokens: int, model_cfg: dict) -> 
 def write_episode(articles: list[Article], today: datetime, config: dict,
                   recent: list[dict] | None = None) -> Episode:
     max_minutes = config["podcast"]["max_minutes"]
-    system = SYSTEM_PROMPT.format(max_words=max_minutes * WORDS_PER_MINUTE, max_minutes=max_minutes)
+    depth = min(5, max(1, int(config["podcast"].get("depth", 2))))
+    system = SYSTEM_PROMPT.format(max_words=max_minutes * WORDS_PER_MINUTE, max_minutes=max_minutes,
+                                  depth_instruction=DEPTH_INSTRUCTIONS[depth])
     prompt = build_prompt(articles, today, recent)
 
     client = anthropic.Anthropic(max_retries=3)
