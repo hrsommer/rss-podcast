@@ -1,17 +1,22 @@
-name: "Podcast: Schritt 1 (Skript)"
+name: "Podcast: Folge erstellen"
 
-# Vorerst nur von Hand startbar: Actions -> "Podcast: Schritt 1 (Skript)" -> "Run workflow".
+# Vorerst nur von Hand startbar: Actions -> "Podcast: Folge erstellen" -> "Run workflow".
 # Der automatische Zeitplan kommt in Schritt 6.
 on:
   workflow_dispatch:
+    inputs:
+      audio:
+        description: "Audio erzeugen (ausschalten für einen schnellen Test nur mit Skript)"
+        type: boolean
+        default: true
 
 permissions:
   contents: read
 
 jobs:
-  script:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
+  episode:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
     steps:
       - name: Code holen
         uses: actions/checkout@v5
@@ -22,17 +27,25 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Pakete installieren
-        run: pip install -q -r requirements.txt
+      - name: ffmpeg und Pakete installieren
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install -q -r requirements.txt
 
-      - name: Artikel sammeln und Skript schreiben
+      - name: Artikel sammeln, Skript schreiben, vorlesen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python main.py
+        run: |
+          if [ "${{ inputs.audio }}" = "false" ]; then
+            python main.py --nur-skript
+          else
+            python main.py
+          fi
 
       - name: Ergebnis zum Herunterladen bereitstellen
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ergebnis
           path: out/
