@@ -1,11 +1,12 @@
 name: "Podcast: Folge erstellen"
 
-# Startet automatisch Montag bis Freitag um 02:17 UTC
-# (= 03:17 Uhr deutscher Winterzeit, 04:17 Uhr Sommerzeit).
+# Startet automatisch am Vorabend: Sonntag bis Donnerstag um 21:17 UTC
+# (= 22:17 Uhr deutscher Winterzeit, 23:17 Uhr Sommerzeit). GitHub startet geplante Läufe
+# manchmal stundenlang verspätet, so ist die Folge trotzdem vor dem Morgen fertig.
 # Von Hand startbar: Actions -> "Podcast: Folge erstellen" -> "Run workflow".
 on:
   schedule:
-    - cron: "17 2 * * 1-5"
+    - cron: "17 21 * * 0-4"
   workflow_dispatch:
     inputs:
       audio:
