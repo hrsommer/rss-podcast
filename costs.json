@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2026-10-26",
+    "time": "08:54",
+    "cost_usd": 0.1603,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-27",
+    "time": "01:32",
+    "cost_usd": 0.1048,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-28",
+    "time": "01:34",
+    "cost_usd": 0.1418,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-29",
+    "time": "02:02",
+    "cost_usd": 0.1512,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "02:07",
+    "cost_usd": 0.2006,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-02",
+    "time": "01:50",
+    "cost_usd": 0.1377,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-03",
+    "time": "03:57",
+    "cost_usd": 0.1295,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "02:28",
+    "cost_usd": 0.134,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-05",
+    "time": "02:30",
+    "cost_usd": 0.222,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-06",
+    "time": "02:36",
+    "cost_usd": 0.1915,
+    "note": "Folge"
+  }
+]
