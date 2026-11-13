@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2026-10-26",
+    "time": "08:54",
+    "cost_usd": 0.1603,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-27",
+    "time": "01:32",
+    "cost_usd": 0.1048,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-28",
+    "time": "01:34",
+    "cost_usd": 0.1418,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-29",
+    "time": "02:02",
+    "cost_usd": 0.1512,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-10-30",
+    "time": "02:07",
+    "cost_usd": 0.2006,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-02",
+    "time": "01:50",
+    "cost_usd": 0.1377,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-03",
+    "time": "03:57",
+    "cost_usd": 0.1295,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-04",
+    "time": "02:28",
+    "cost_usd": 0.134,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-05",
+    "time": "02:30",
+    "cost_usd": 0.222,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-06",
+    "time": "02:36",
+    "cost_usd": 0.1915,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-09",
+    "time": "01:59",
+    "cost_usd": 0.1487,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-10",
+    "time": "04:43",
+    "cost_usd": 0.1535,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-11",
+    "time": "02:17",
+    "cost_usd": 0.1523,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-12",
+    "time": "03:19",
+    "cost_usd": 0.2002,
+    "note": "Folge"
+  },
+  {
+    "date": "2026-11-13",
+    "time": "02:54",
+    "cost_usd": 0.1902,
+    "note": "Folge"
+  }
+]

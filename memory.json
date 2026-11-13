@@ -1,0 +1,1013 @@
+{
+  "last_episode_utc": "2026-11-13T01:54:27.041212+00:00",
+  "articles": {
+    "https://www.scientificamerican.com/article/how-exposing-yourself-to-your-fears-can-tame-your-anxiety/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/23/1147628/the-download-testing-tech-promises-science-blind-spots/": "2026-10-23",
+    "https://hackaday.com/2026/10/23/when-you-cant-pick-between-electric-and-jet-power-this-buggy-has-you-covered/": "2026-10-23",
+    "https://www.scientificamerican.com/article/japans-mmx-mission-will-reveal-the-origins-of-weird-martian-moons/": "2026-10-23",
+    "https://www.scientificamerican.com/podcast/episode/how-the-brain-handles-uncertainty-and-why-resilience-matters/": "2026-10-23",
+    "https://www.scientificamerican.com/article/rfk-jr-promised-to-define-ultraprocessed-food-whats-taking-so-long/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/23/1147610/biotech-you-can-see-everything-theranos-holmes/": "2026-10-23",
+    "https://hackaday.com/2026/10/23/doom-ported-to-a-30-clamp-meter/": "2026-10-23",
+    "https://semiengineering.com/chip-industry-week-in-review-161/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/restoring-a-soviet-es-4001-mainframe-control-panel/": "2026-10-23",
+    "https://www.photonics.com/Articles/SurFunction-and-Precitec-Bring-Metasurface-Tech/p5/a72713": "2026-10-23",
+    "https://hackaday.com/2026/10/22/nasa-batteries-survive-extreme-cold-and-heat/": "2026-10-23",
+    "https://www.photonics.com/Articles/Plasma-Antenna-Transmits-RF-Waves-for-Air-and/p5/a72696": "2026-10-23",
+    "https://hackaday.com/2026/10/22/cars-camera-footage-backed-up-to-nas/": "2026-10-23",
+    "https://www.scientificamerican.com/article/heres-what-modernas-latest-mrna-cancer-vaccine-data-actually-show/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/an-open-source-linear-capacitive-encoder/": "2026-10-23",
+    "https://www.scientificamerican.com/article/rfk-jr-adviser-calley-means-announces-his-resignation-from-the-trump-administration/": "2026-10-23",
+    "https://www.technologyreview.com/2026/10/22/1146103/the-foundations-of-scalable-ai/": "2026-10-23",
+    "https://hackaday.com/2026/10/22/keeping-old-wi-fi-radios-alive-with-stream-conversion/": "2026-10-23",
+    "https://www.scientificamerican.com/article/this-implant-burns-up-excess-blood-sugar-with-electricity/": "2026-10-23",
+    "https://www.scientificamerican.com/article/data-centers-are-a-target-of-modern-warfare-how-do-we-secure-the-infrastructure-that-runs-our-digital-lives/": "2026-10-23",
+    "https://www.scientificamerican.com/article/the-inside-story-behind-openais-million-dollar-math-proof/": "2026-10-23",
+    "https://www.scientificamerican.com/article/astronomers-unlock-a-mystery-hidden-in-van-goghs-the-starry-night/": "2026-10-23",
+    "https://semiengineering.com/vertical-dram-stacking-expands-thermal-design-space-beyond-hbm-imec/": "2026-10-26",
+    "https://semiengineering.com/large-format-masks-move-from-aspiration-to-industry-roadmap/": "2026-10-26",
+    "https://semiengineering.com/testing-silicon-photonics-at-scale/": "2026-10-26",
+    "https://semiengineering.com/bringing-down-test-costs-for-co-packaged-optics/": "2026-10-26",
+    "https://semiengineering.com/self-heating-and-parasitics-challenge-multi-tier-cfet-scaling-tu-munich-iit-kanpur/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/building-a-swashplate-less-helicoper-rotor/": "2026-10-26",
+    "https://www.photonics.com/Articles/QFX-Awarded-9M-Contract/p5/a72701": "2026-10-26",
+    "https://hackaday.com/2026/10/25/transforming-a-tungsten-ditelluride-monolayer-into-a-transistor/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/hackaday-links-october-25-2026/": "2026-10-26",
+    "https://semiengineering.com/pt-w-alloy-shows-potential-for-thinner-high-na-euv-mask-absorbers-chinese-academy-of-sciences-et-al/": "2026-10-26",
+    "https://semiengineering.com/dry-deposited-resist-shows-different-tone-behavior-under-euv-and-e-beam-exposure-ku-leuven-kunsan-vub-imec/": "2026-10-26",
+    "https://semiengineering.com/silicon-photonic-modulator-reaches-200-gb-s-pam4-with-reduced-dsp-science-tokyo-yokohama-aist-petra/": "2026-10-26",
+    "https://semiengineering.com/security-aware-layer-mapping-reduces-fault-vulnerability-in-3d-compute-in-memory-asu-u-of-maryland/": "2026-10-26",
+    "https://semiengineering.com/neural-networks-speed-3nm-nanosheet-spice-simulation-tu-munich/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/a-3d-printed-marble-clock-but-its-scrolling-text/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/mesh-network-telephony-over-bluetooth-on-android-phones/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/simple-reliable-rf-remote-control/": "2026-10-26",
+    "https://hackaday.com/2026/10/25/meshtastic-pet-tracking/": "2026-10-26",
+    "https://www.scientificamerican.com/article/why-partisan-politics-may-be-changing-peoples-accents/": "2026-10-26",
+    "https://spectrum.ieee.org/biometric-voting-technology": "2026-10-26",
+    "https://www.scientificamerican.com/article/meet-the-original-ghost-busters-the-17th-century-scientists-who-investigated-hauntings/": "2026-10-26",
+    "https://www.scientificamerican.com/article/nasa-lays-out-a-packed-14-day-schedule-for-2027s-artemis-iii-moon-mission/": "2026-10-26",
+    "https://www.scientificamerican.com/article/warhound-wants-to-engineer-and-clone-military-super-dogs-can-they-do-it/": "2026-10-26",
+    "https://www.scientificamerican.com/article/strange-triangular-craft-reported-in-new-u-s-government-ufo-release/": "2026-10-26",
+    "https://www.scientificamerican.com/article/the-trump-administration-is-considering-a-heat-ray-weapon-for-the-border-heres-what-to-know/": "2026-10-26",
+    "https://spectrum.ieee.org/video-friday-rubiks-cube-robot": "2026-10-26",
+    "https://hackaday.com/2026/10/26/enable-resizable-bar-on-unsupported-motherboards/": "2026-10-27",
+    "https://hackaday.com/2026/10/26/practice-japanese-on-an-inkplate-4tempera-eink-device/": "2026-10-27",
+    "https://spectrum.ieee.org/ieee-xplore-digital-library-ai": "2026-10-27",
+    "https://www.scientificamerican.com/article/anthropics-s-1-filing-spotlights-safety-fears-and-science-ambitions-ahead-of-ipo/": "2026-10-27",
+    "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/": "2026-10-27",
+    "https://hackaday.com/2026/10/26/arduino-engine-runs-many-games/": "2026-10-27",
+    "https://hackaday.com/2026/10/26/bmw-i3-mod-brings-small-trucks-to-the-ev-future/": "2026-10-27",
+    "https://www.scientificamerican.com/article/how-birds-can-quietly-spread-a-severe-form-of-pneumonia/": "2026-10-27",
+    "https://hackaday.com/2026/10/26/the-fascinating-world-of-irda-and-other-infrared-protocols/": "2026-10-27",
+    "https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/": "2026-10-27",
+    "https://spectrum.ieee.org/zblan-fiber-optic-cables-iss": "2026-10-27",
+    "https://hackaday.com/2026/10/26/hiding-virtualization-from-other-software/": "2026-10-27",
+    "https://www.scientificamerican.com/article/what-is-trypophobia-why-some-peoples-skin-crawls-when-they-see-tiny-holes/": "2026-10-27",
+    "https://www.scientificamerican.com/podcast/episode/snakes-that-cartwheel-vultures-that-groan-a-mysterious-martian-moon-and-more/": "2026-10-27",
+    "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/": "2026-10-27",
+    "https://hackaday.com/2026/10/26/hairy-armor-for-combat-robot-its-not-terrible/": "2026-10-27",
+    "https://hackaday.com/2026/10/27/how-a-single-university-project-started-everything/": "2026-10-28",
+    "https://www.scientificamerican.com/article/the-vera-c-rubin-observatory-may-have-just-discovered-our-solar-systems-sixth-dwarf-planet/": "2026-10-28",
+    "https://semiengineering.com/analog-superposition-increases-effective-pcm-storage-density-ibm-research-europe/": "2026-10-28",
+    "https://hackaday.com/2026/10/27/2026-retrocomputing-challenge-explore-space-with-a-credit-card-reader/": "2026-10-28",
+    "https://www.scientificamerican.com/article/openai-just-scooped-human-researchers-on-a-million-dollar-quantum-math-problem/": "2026-10-28",
+    "https://www.scientificamerican.com/article/how-a-16th-century-pirate-accidentally-spawned-a-centuries-old-math-problem/": "2026-10-28",
+    "https://hackaday.com/2026/10/27/where-did-your-mouse-come-from/": "2026-10-28",
+    "https://www.scientificamerican.com/article/cdc-deputy-director-jennifer-shuford-resigns-after-just-four-months-in-the-role/": "2026-10-28",
+    "https://hackaday.com/2026/10/27/how-bad-is-that-bridge-a-government-database/": "2026-10-28",
+    "https://www.scientificamerican.com/article/dueling-proofs-from-openai-and-anthropic-astound-scientists/": "2026-10-28",
+    "https://www.scientificamerican.com/article/sleep-and-depression-may-be-more-intertwined-than-we-thought/": "2026-10-28",
+    "https://www.technologyreview.com/2026/10/27/1147693/the-download-anthropic-ipo-smarter-power-grids-exercise-pills/": "2026-10-28",
+    "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/": "2026-10-28",
+    "https://hackaday.com/2026/10/27/simd-accelerated-machine-vision-on-an-esp32-s3/": "2026-10-28",
+    "https://www.scientificamerican.com/article/underwater-data-centers-may-be-coming-to-the-u-s-smack-in-the-middle-of-endangered-whale-habitat/": "2026-10-28",
+    "https://www.scientificamerican.com/article/why-well-never-have-another-black-death/": "2026-10-28",
+    "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/": "2026-10-28",
+    "https://hackaday.com/2026/10/27/esp32-rotary-display-makes-ideal-timer/": "2026-10-28",
+    "https://www.photonics.com/Articles/Optica-Names-2027-Fellows-Class/p5/a72716": "2026-10-28",
+    "https://semiengineering.com/the-imec-report-scaling-optical-interconnects-for-the-ai-era/": "2026-10-28",
+    "https://semiengineering.com/chip-industry-technical-paper-roundup-oct-27/": "2026-10-28",
+    "https://www.photonics.com/Articles/Cambridge-Heavy-Industries-Raises-62M-Seed-Round/p5/a72717": "2026-10-28",
+    "https://hackaday.com/2026/10/26/the-oldest-windows-app-to-still-run-on-windows-11/": "2026-10-28",
+    "https://hackaday.com/2026/10/28/hacking-the-modern-tamagotchi-with-uart/": "2026-10-29",
+    "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/does-running-an-e-paper-display-at-30-fps-destroy-it/": "2026-10-29",
+    "https://www.scientificamerican.com/article/rfk-jr-loosens-restrictions-for-six-popular-peptides-bypassing-the-fda/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/c64-keycaps-for-everybody/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/turning-an-old-phones-motherboard-into-an-rc-plane-controller/": "2026-10-29",
+    "https://www.scientificamerican.com/article/landmark-study-finds-three-in-four-nfl-players-die-with-cte/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/jpeg-xl-is-back-on-the-menu/": "2026-10-29",
+    "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/": "2026-10-29",
+    "https://www.technologyreview.com/2026/10/28/1147637/pairing-industrial-ai-autonomy-and-human-control/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/emulate-the-486-in-your-browser/": "2026-10-29",
+    "https://www.scientificamerican.com/article/sci-fi-horror-collides-with-small-town-politics-in-john-scalzis-monsters-of-ohio/": "2026-10-29",
+    "https://www.scientificamerican.com/article/animal-borne-shamonda-virus-infects-and-kills-a-human-for-the-first-time/": "2026-10-29",
+    "https://www.scientificamerican.com/article/7-spooky-bat-facts-right-in-time-for-halloween/": "2026-10-29",
+    "https://www.scientificamerican.com/podcast/episode/why-science-is-on-the-ballot-in-the-2026-midterm-elections/": "2026-10-29",
+    "https://hackaday.com/2026/10/28/slam-navigation-for-an-arduino-powered-car/": "2026-10-29",
+    "https://spectrum.ieee.org/faa-aviation-airwaves": "2026-10-29",
+    "https://semiengineering.com/introducing-build-a-chip-bench-from-workload-specification-to-gds/": "2026-10-29",
+    "https://semiengineering.com/foundations-of-power-management-in-the-age-of-ai/": "2026-10-29",
+    "https://semiengineering.com/using-ai-for-analog-design/": "2026-10-29",
+    "https://semiengineering.com/foundation-ip-for-the-ai-era-why-execution-saves-you-millions-on-hpc-and-edge-ai-socs/": "2026-10-29",
+    "https://semiengineering.com/planning-your-ai-design-journey-in-rf-eda/": "2026-10-29",
+    "https://semiengineering.com/how-much-can-semiconductor-models-hide/": "2026-10-29",
+    "https://semiengineering.com/blog-review-oct-28-3/": "2026-10-29",
+    "https://www.photonics.com/Articles/LMI-Acquires-Vitronics-Weld-Seam-Inspection/p5/a72721": "2026-10-29",
+    "https://www.photonics.com/Articles/Sparrow-Quantum-Appoints-CEO-People-in-the-News/p5/a72719": "2026-10-29",
+    "https://www.photonics.com/Articles/SLAC-Sets-Record-for-Shortest-High-Energy-Light/p5/a72720": "2026-10-29",
+    "https://hackaday.com/2026/10/29/replicating-the-color-changing-effect-of-the-lycurgus-cup/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/an-attempt-at-a-useful-desktop-os-for-microcontrollers/": "2026-10-30",
+    "https://www.scientificamerican.com/article/oldest-known-mars-rock-is-a-rosetta-stone-for-the-red-planets-watery-past/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/2026-hackaday-supercon-all-the-speakers/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/robot-picks-up-othello/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/exploring-whats-left-of-googles-vr-dreams/": "2026-10-30",
+    "https://spectrum.ieee.org/infrastructure-inspection-airship-hylight": "2026-10-30",
+    "https://www.technologyreview.com/2026/10/29/1147830/the-download-monitoring-ai-agents-climate-feedback-loops/": "2026-10-30",
+    "https://spectrum.ieee.org/medical-implant-energy-harvesting-mesh": "2026-10-30",
+    "https://www.scientificamerican.com/article/scientists-can-now-rewire-living-brains/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/an-ai-chatbot-for-the-apocalypse/": "2026-10-30",
+    "https://www.scientificamerican.com/article/five-things-you-need-to-know-about-the-trump-administrations-rollback-of-methane-regulations/": "2026-10-30",
+    "https://www.scientificamerican.com/article/mathematicians-find-an-infinite-number-of-ramanujan-equations/": "2026-10-30",
+    "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/": "2026-10-30",
+    "https://www.scientificamerican.com/article/can-the-worlds-religions-survive-the-existence-of-aliens/": "2026-10-30",
+    "https://www.technologyreview.com/2026/10/29/1147735/climate-models-blind-spot/": "2026-10-30",
+    "https://hackaday.com/2026/10/29/magnetic-lock-opens-by-magic/": "2026-10-30",
+    "https://semiengineering.com/auto-generation-of-properties-methodology-insertion/": "2026-10-30",
+    "https://semiengineering.com/rethinking-shift-left-in-chip-design/": "2026-10-30",
+    "https://semiengineering.com/ai-raises-the-bar-for-tomorrows-engineers/": "2026-10-30",
+    "https://semiengineering.com/the-complexity-between-the-bits/": "2026-10-30",
+    "https://semiengineering.com/is-it-getting-hot-in-here-why-thermal-is-no-longer-a-signoff-problem/": "2026-10-30",
+    "https://semiengineering.com/physics-based-validation-the-foundation-of-trustworthy-agentic-eda/": "2026-10-30",
+    "https://semiengineering.com/the-eu-cyber-resilience-act-reaches-chip-and-ip-suppliers/": "2026-10-30",
+    "https://semiengineering.com/from-functional-monitoring-to-in-system-test-extending-voltage-aware-observability/": "2026-10-30",
+    "https://semiengineering.com/scaling-autonomous-root-cause-analysis-for-regression-triage/": "2026-10-30",
+    "https://semiengineering.com/why-physics-needs-to-move-at-the-pace-of-design/": "2026-10-30",
+    "https://www.photonics.com/Articles/Microscopy-Platform-Images-Neuron-Activity-at/p5/a72723": "2026-10-30",
+    "https://www.photonics.com/Articles/NVision-Reports-Quantum-Manufacturing-Milestone/p5/a72724": "2026-10-30",
+    "https://hackaday.com/2026/11/01/cheap-fpga-board-becomes-retro-style-computer/": "2026-11-02",
+    "https://hackaday.com/2026/11/01/a-game-engine-for-microcontrollers/": "2026-11-02",
+    "https://hackaday.com/2026/11/01/an-electronic-candle-you-can-set-on-fire/": "2026-11-02",
+    "https://hackaday.com/2026/11/01/flopposcope-is-a-disk-image-analyzer/": "2026-11-02",
+    "https://hackaday.com/2026/11/01/turning-syngas-into-hydrocarbons-with-the-right-alpha/": "2026-11-02",
+    "https://www.scientificamerican.com/article/these-tattoos-can-magically-disappear-heres-how-they-work/": "2026-11-02",
+    "https://hackaday.com/2026/11/01/building-an-ads-b-receiver-for-less-than-you-think/": "2026-11-02",
+    "https://hackaday.com/2026/10/31/huge-palmos-development-archive-goes-online-thanks-to-personal-backups/": "2026-11-02",
+    "https://www.scientificamerican.com/article/how-your-brain-can-turn-your-own-reflection-into-something-unrecognizable/": "2026-11-02",
+    "https://www.scientificamerican.com/article/how-to-fall-back-this-weekend-without-losing-your-mind/": "2026-11-02",
+    "https://www.scientificamerican.com/article/boo-see-the-universes-spookiest-sights-in-time-for-halloween/": "2026-11-02",
+    "https://www.scientificamerican.com/article/the-worlds-biggest-cities-are-sinking-is-yours-one-of-them/": "2026-11-02",
+    "https://www.scientificamerican.com/article/paleo-lighting-can-fix-your-brains-clock-after-daylight-savings/": "2026-11-02",
+    "https://spectrum.ieee.org/video-friday-whole-body-manipulation": "2026-11-02",
+    "https://www.scientificamerican.com/article/this-october-is-on-track-to-be-the-hottest-ever-recorded/": "2026-11-02",
+    "https://www.scientificamerican.com/article/an-exclusive-conversation-with-the-developer-of-rea-the-viral-ai-reverse-engineering-tool/": "2026-11-02",
+    "https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals/": "2026-11-02",
+    "https://www.scientificamerican.com/article/whats-the-scariest-thing-in-the-universe/": "2026-11-02",
+    "https://www.scientificamerican.com/podcast/episode/the-science-of-why-were-obsessed-with-vampires/": "2026-11-02",
+    "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/": "2026-11-02",
+    "https://semiengineering.com/chip-industry-week-in-review-162/": "2026-11-02",
+    "https://www.photonics.com/Articles/Holographic-Optogenetics-and-Two-Photon-Imaging/p5/a72726": "2026-11-02",
+    "https://www.photonics.com/Articles/FIA-and-J-Fusion-Partner-on-Commercial-Fusion/p5/a72727": "2026-11-02",
+    "https://www.photonics.com/Articles/Kyushu-University-Sumitomo-Chemical-Demonstrate/p5/a72728": "2026-11-02",
+    "https://hackaday.com/2026/11/02/flying-an-rc-airplane-with-twin-airblower-edfs/": "2026-11-03",
+    "https://hackaday.com/2026/11/02/investigating-whether-zener-diodes-work-for-esd-protection/": "2026-11-03",
+    "https://hackaday.com/2026/11/02/ask-hackaday-what-puts-this-photo-in-the-pink/": "2026-11-03",
+    "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/": "2026-11-03",
+    "https://hackaday.com/2026/11/02/solar-light-shows-why-replacing-nimh-with-li-ion-is-dangerous/": "2026-11-03",
+    "https://www.scientificamerican.com/article/this-bull-and-donkey-show-interspecies-homosexual-bonds-can-run-deep/": "2026-11-03",
+    "https://hackaday.com/2026/11/02/looking-for-a-cellular-modem/": "2026-11-03",
+    "https://www.scientificamerican.com/article/how-to-tell-if-a-voice-recording-is-ai-generated/": "2026-11-03",
+    "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/": "2026-11-03",
+    "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/": "2026-11-03",
+    "https://spectrum.ieee.org/telecommunications-act-reform": "2026-11-03",
+    "https://hackaday.com/2026/11/02/static-radio-for-the-chumby-one/": "2026-11-03",
+    "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability": "2026-11-03",
+    "https://www.scientificamerican.com/podcast/episode/ebola-update-ai-math-scoop-and-permanent-daylight-saving-time/": "2026-11-03",
+    "https://www.photonics.com/Articles/Marvell-Acquiring-Lumentum-for-115B/p5/a72732": "2026-11-03",
+    "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/": "2026-11-03",
+    "https://hackaday.com/2026/11/02/a-hackable-analog-phone-system/": "2026-11-03",
+    "https://www.photonics.com/Articles/Neuroscience-2026-Returns-for-its-55th-Year/p5/a72711": "2026-11-03",
+    "https://www.photonics.com/Articles/Pixxel-Establishes-Pixxel-Federal-to-Expand-Govt/p5/a72731": "2026-11-03",
+    "https://www.photonics.com/Articles/Blue-Laser-Fusion-Raises-34M/p5/a72729": "2026-11-03",
+    "https://hackaday.com/2026/11/03/etching-press-aims-to-impress/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/toddler-phone-calls-family-and-no-one-else/": "2026-11-04",
+    "https://www.scientificamerican.com/article/how-hackers-are-turning-grocery-store-freezers-into-heaters/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/detecting-an-eight-magnetic-pole-state-using-chiral-phonons/": "2026-11-04",
+    "https://semiengineering.com/randomized-caches-in-hw-overheads-and-limitations-rub-max-planck-georgia-tech/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/2026-hackaday-supercon-bruce-potters-keynote-explores-the-hacker-mind/": "2026-11-04",
+    "https://www.scientificamerican.com/article/the-most-impractical-calculator-in-the-world-only-has-two-buttons/": "2026-11-04",
+    "https://semiengineering.com/fast-sub-volt-hzo-ferroelectric-capacitors-for-dram-like-memory-snu/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/toothpaste-goes-where-your-password-manager-doesnt/": "2026-11-04",
+    "https://www.scientificamerican.com/article/incan-children-were-given-hallucinogens-before-they-were-sacrificed-to-the-gods/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/the-depiction-of-amateur-radio-in-the-movies-and-tv/": "2026-11-04",
+    "https://www.scientificamerican.com/article/new-yorks-first-measles-death-in-30-years-is-an-omen-of-worse-to-come/": "2026-11-04",
+    "https://spectrum.ieee.org/ai-small-business-mobile-money-startup": "2026-11-04",
+    "https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/": "2026-11-04",
+    "https://www.scientificamerican.com/article/self-flying-cargo-planes-are-coming/": "2026-11-04",
+    "https://www.scientificamerican.com/article/the-2026-midterms-are-today-heres-what-scientists-say-is-at-stake/": "2026-11-04",
+    "https://www.scientificamerican.com/article/do-cats-fart-an-investigation-into-the-mysteries-of-feline-flatulence/": "2026-11-04",
+    "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/": "2026-11-04",
+    "https://hackaday.com/2026/11/03/the-components-for-life-may-not-have-arrived-by-comet/": "2026-11-04",
+    "https://semiengineering.com/chip-industry-technical-paper-roundup-nov-3/": "2026-11-04",
+    "https://www.photonics.com/Articles/Light-Manipulates-Magnetic-States-Faster-Than/p5/a72734": "2026-11-04",
+    "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/": "2026-11-04",
+    "https://www.photonics.com/Articles/INLEAP-Photonics-Adds-Manufacturing-Capacity-for/p5/a72733": "2026-11-04",
+    "https://hackaday.com/2026/11/04/beautiful-laser-harp-hides-some-neat-tricks/": "2026-11-05",
+    "https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/its-doom-on-a-toy-camera/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/making-a-wax-motor-for-micrometer-level-control/": "2026-11-05",
+    "https://www.scientificamerican.com/article/the-super-el-nino-is-already-soaking-the-u-s-expect-more-flooding-to-come/": "2026-11-05",
+    "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/": "2026-11-05",
+    "https://spectrum.ieee.org/drone-delivery-noise": "2026-11-05",
+    "https://www.technologyreview.com/2026/11/04/1148049/roundtables-inside-the-quest-for-cognitive-immortality/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/from-germanium-to-diamond-the-many-shapes-of-semiconductors/": "2026-11-05",
+    "https://www.scientificamerican.com/article/science-advocates-react-to-democrats-historic-midterm-rout-its-a-new-day-in-washington/": "2026-11-05",
+    "https://www.scientificamerican.com/article/could-spacexs-retirement-of-falcon-9-spark-a-launch-crisis/": "2026-11-05",
+    "https://www.technologyreview.com/2026/11/04/1148022/us-energy-midterm/": "2026-11-05",
+    "https://www.scientificamerican.com/article/the-polar-vortex-is-about-to-go-haywire/": "2026-11-05",
+    "https://www.scientificamerican.com/article/what-a-historic-blue-wave-midterm-means-for-climate-action/": "2026-11-05",
+    "https://www.scientificamerican.com/article/nasas-swift-telescope-plunges-back-to-earth/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/using-a-cheap-dc-motor-to-make-a-go-kart-go/": "2026-11-05",
+    "https://www.scientificamerican.com/article/nasas-james-webb-space-telescope-is-wobbly-scientists-have-a-fix-that-could-reveal-new-alien-worlds/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/yesterday-has-never-looked-this-good-feast-your-eyes-on-the-2026-retrocomputing-challenge-winners/": "2026-11-05",
+    "https://www.scientificamerican.com/article/how-does-mental-fatigue-begin-in-the-brain/": "2026-11-05",
+    "https://www.photonics.com/Articles/SPIE-Names-2027-Prism-Award-Finalists/p5/a72739": "2026-11-05",
+    "https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/": "2026-11-05",
+    "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/": "2026-11-05",
+    "https://hackaday.com/2026/11/04/a-ridiculous-journey-to-set-the-clock-in-a-2014-renault/": "2026-11-05",
+    "https://www.scientificamerican.com/podcast/episode/how-the-tiny-soybean-took-over-the-american-diet/": "2026-11-05",
+    "https://semiengineering.com/accelerating-plug-and-play-prototyping-in-chiplet-based-designs/": "2026-11-05",
+    "https://semiengineering.com/adding-network-security-to-ai-hpc-and-data-centers/": "2026-11-05",
+    "https://semiengineering.com/built-to-last-why-automotive-grade-pqc-cant-wait/": "2026-11-05",
+    "https://semiengineering.com/validate-sovereign-ai-sites-before-you-commit-capital-ebook/": "2026-11-05",
+    "https://semiengineering.com/3d-ic-signal-integrity-from-silicon-interposers-to-system-signoff/": "2026-11-05",
+    "https://semiengineering.com/beyond-the-chip-how-ai-is-reshaping-semiconductor-design-and-manufacturing/": "2026-11-05",
+    "https://semiengineering.com/choosing-the-right-power-transistor-why-application-fit-matters-more-than-technology/": "2026-11-05",
+    "https://semiengineering.com/blog-review-nov-4-3/": "2026-11-05",
+    "https://semiengineering.com/neural-super-resolution/": "2026-11-05",
+    "https://www.photonics.com/Articles/Coherix-Names-CEO-People-in-the-News-11-4-26/p5/a72737": "2026-11-05",
+    "https://www.photonics.com/Articles/IPG-Photonics-Reports-2875M-in-Quarterly/p5/a72736": "2026-11-05",
+    "https://hackaday.com/2026/11/05/reviving-google-cardboard-without-google-or-cardboard/": "2026-11-06",
+    "https://hackaday.com/2026/11/05/stunning-volumetric-3d-display-goes-for-a-spin/": "2026-11-06",
+    "https://hackaday.com/2026/11/05/a-tiny-os-for-a-tiny-board/": "2026-11-06",
+    "https://www.scientificamerican.com/article/ancient-humans-used-cannabis-in-burial-rituals-2-800-years-ago/": "2026-11-06",
+    "https://hackaday.com/2026/11/05/folding-wings-could-be-the-future-for-air-travel/": "2026-11-06",
+    "https://www.scientificamerican.com/article/these-are-the-doctors-and-scientists-elected-in-the-2026-midterms/": "2026-11-06",
+    "https://www.scientificamerican.com/article/the-great-pacific-garbage-patch-is-changing-the-color-of-the-ocean/": "2026-11-06",
+    "https://spectrum.ieee.org/samphire-neuroscience-tdcs-pmdd-treatment": "2026-11-06",
+    "https://hackaday.com/2026/11/05/pitting-a-modern-chess-engine-on-a-pentium-pc-against-1996s-deep-blue/": "2026-11-06",
+    "https://hackaday.com/2026/11/05/i-think-we-should-see-other-sbcs/": "2026-11-06",
+    "https://spectrum.ieee.org/ai-watermark-openai-textgrain-europe": "2026-11-06",
+    "https://www.scientificamerican.com/article/hundreds-of-stunning-ice-age-drawings-discovered-inside-spanish-cave/": "2026-11-06",
+    "https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/": "2026-11-06",
+    "https://hackaday.com/2026/11/05/finger-joint-cutter-uses-a-jigsaw-blade-but-not-as-we-know-it/": "2026-11-06",
+    "https://www.scientificamerican.com/article/how-george-clinton-mothership-landed-onstage-in-1976/": "2026-11-06",
+    "https://www.technologyreview.com/2026/11/05/1148062/permitting-reform/": "2026-11-06",
+    "https://semiengineering.com/adding-network-security-to-ai-hpc-and-data-centers-2/": "2026-11-06",
+    "https://semiengineering.com/turning-conv2d-into-a-practical-gpu-compute-pattern/": "2026-11-06",
+    "https://semiengineering.com/a-system-level-approach-to-protecting-3d-ic-signal-integrity/": "2026-11-06",
+    "https://semiengineering.com/fitting-ai-models-to-edge-applications/": "2026-11-06",
+    "https://semiengineering.com/why-testing-automated-driving-is-harder-than-it-looks/": "2026-11-06",
+    "https://semiengineering.com/why-integrated-gate-drive-regulation-matters-for-high-reliability-space-gan-designs/": "2026-11-06",
+    "https://semiengineering.com/physical-ai-pushes-the-limits-of-hardware/": "2026-11-06",
+    "https://semiengineering.com/college-grads-and-ai/": "2026-11-06",
+    "https://www.photonics.com/Articles/MicroVision-Field-AI-Collaborate-on-Industrial/p5/a72740": "2026-11-06",
+    "https://www.photonics.com/Articles/3D-Printed-Color-Router-Improves-Image-Quality-in/p5/a72742": "2026-11-06",
+    "https://www.photonics.com/Articles/Wolfspeed-Debuts-Transparent-Silicon-Carbide-for/p5/a72741": "2026-11-06",
+    "https://www.photonics.com/Articles/MKS-Expands-Chinese-Manufacturing-Facility-Week/p5/a72744": "2026-11-06",
+    "https://hackaday.com/2026/11/08/space-invaders-on-a-vfd/": "2026-11-09",
+    "https://hackaday.com/2026/11/08/lillith-tells-your-future/": "2026-11-09",
+    "https://hackaday.com/2026/11/08/custom-game-boy-cart-speeds-up-development/": "2026-11-09",
+    "https://hackaday.com/2026/11/08/an-fpga-version-of-the-att-unix-pc-for-mister/": "2026-11-09",
+    "https://spectrum.ieee.org/type-2-diabetes-electroceutical-implant": "2026-11-09",
+    "https://www.scientificamerican.com/article/why-do-some-people-hear-pitch-better-than-others-internal-noise-may-be-the-key/": "2026-11-09",
+    "https://www.scientificamerican.com/article/acorns-not-deer-can-predict-a-rise-in-lyme-spreading-ticks/": "2026-11-09",
+    "https://hackaday.com/2026/11/07/making-a-dog-car-wash-without-very-fancy-tools/": "2026-11-09",
+    "https://hackaday.com/2026/11/07/artemis-ii-rocket-was-powerful-enough-to-disrupt-gps/": "2026-11-09",
+    "https://hackaday.com/2026/11/07/play-text-adventures-on-an-e-paper-handheld/": "2026-11-09",
+    "https://www.scientificamerican.com/article/nasa-reveals-new-lunar-rover-promise-to-launch-to-moon-in-2028/": "2026-11-09",
+    "https://hackaday.com/2026/11/07/supercon-2026-streaming-live/": "2026-11-09",
+    "https://spectrum.ieee.org/solar-panel-cooling": "2026-11-09",
+    "https://www.scientificamerican.com/article/earths-rocks-have-a-missing-layer-spanning-up-to-a-billion-years-scientists-finally-know-what-happened-to-it/": "2026-11-09",
+    "https://www.scientificamerican.com/article/the-mathematical-trick-that-explains-how-to-find-a-needle-in-a-haystack/": "2026-11-09",
+    "https://www.scientificamerican.com/article/nothing-can-be-fully-transparent-physicists-discover/": "2026-11-09",
+    "https://www.scientificamerican.com/article/this-brain-change-can-make-foxes-act-like-pet-dogs/": "2026-11-09",
+    "https://spectrum.ieee.org/video-friday-home-cable-robot": "2026-11-09",
+    "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/": "2026-11-09",
+    "https://www.scientificamerican.com/article/have-astronomers-spotted-planet-nine/": "2026-11-09",
+    "https://www.scientificamerican.com/podcast/episode/kevin-roose-says-the-race-to-build-superintelligence-is-accelerating/": "2026-11-09",
+    "https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/": "2026-11-09",
+    "https://semiengineering.com/chip-industry-week-in-review-163/": "2026-11-09",
+    "https://www.photonics.com/Articles/MIR-Microscopy-Method-Achieves-Video-Rate/p5/a72743": "2026-11-09",
+    "https://hackaday.com/2026/11/09/you-wouldnt-download-a-car/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/free-your-harley-from-the-dealer/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/from-phone-to-sdr-no-extra-hardware/": "2026-11-10",
+    "https://www.technologyreview.com/2026/11/09/1148194/the-backlash-about-data-centers-might-really-just-be-about-electricity/": "2026-11-10",
+    "https://www.scientificamerican.com/article/eli-lilly-shows-glp-1-weight-loss-pill-foundayo-can-dramatically-improve-sleep-apnea/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/udp-broadcasting-meets-the-more-focused-multicasting/": "2026-11-10",
+    "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/reverse-engineering-a-1960s-diode-transistor-logic-ic/": "2026-11-10",
+    "https://www.scientificamerican.com/article/the-coin-flipping-trick-that-counts-the-internet/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/radon-active/": "2026-11-10",
+    "https://spectrum.ieee.org/agentic-robotics": "2026-11-10",
+    "https://www.photonics.com/Articles/GH-to-Acquire-Acousto-Optic-Solutions-Provider/p5/a72750": "2026-11-10",
+    "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/": "2026-11-10",
+    "https://spectrum.ieee.org/find-my-ai-chip": "2026-11-10",
+    "https://www.technologyreview.com/2026/11/09/1147654/innovating-with-ai-in-the-special-chemicals-industry/": "2026-11-10",
+    "https://hackaday.com/2026/11/09/web-satellite-tracker-plays-the-music-of-the-spheres/": "2026-11-10",
+    "https://www.scientificamerican.com/article/bursts-of-pink-noise-during-sleep-could-help-your-brain-clean-itself/": "2026-11-10",
+    "https://www.scientificamerican.com/podcast/episode/why-measles-is-spreading-again-how-hackers-are-targeting-freezers-and-whether-cats-fart/": "2026-11-10",
+    "https://www.technologyreview.com/2026/11/09/1148166/the-climate-case-for-ai-has-not-been-made/": "2026-11-10",
+    "https://semiengineering.com/memory-in-physical-ai/": "2026-11-10",
+    "https://semiengineering.com/the-optical-super-highway-for-ai/": "2026-11-10",
+    "https://www.photonics.com/Articles/Noak-imec-Spinoff-Raises-55M-to-Industrialize/p5/a72745": "2026-11-10",
+    "https://www.photonics.com/Articles/Coherent-Posts-24B-in-Revenue-Reflecting-AI/p5/a72746": "2026-11-10",
+    "https://hackaday.com/2026/11/10/watching-the-watchers/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/gesture-controls-with-only-a-camera/": "2026-11-11",
+    "https://www.scientificamerican.com/article/was-isaac-newtons-contribution-to-calculus-stolen/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/how-crispr-could-mark-mutated-cancer-cells-for-termination/": "2026-11-11",
+    "https://www.scientificamerican.com/article/the-u-s-may-be-on-the-cusp-of-losing-its-measles-elimination-status/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/simulating-and-visualising-the-central-limit-theorem/": "2026-11-11",
+    "https://www.scientificamerican.com/article/oil-prices-are-so-high-that-co2-emissions-from-fossil-fuels-are-dropping/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/devicetree-for-hackers-intro/": "2026-11-11",
+    "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets": "2026-11-11",
+    "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/": "2026-11-11",
+    "https://www.technologyreview.com/2026/11/10/1147726/evolving-metal-extraction-processes/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/have-you-ever-heard-of-the-lobo-max-80/": "2026-11-11",
+    "https://www.scientificamerican.com/article/virtual-fruit-fly-brains-can-play-doom-and-trade-bitcoin/": "2026-11-11",
+    "https://www.scientificamerican.com/article/5-things-to-know-going-into-the-cop31-climate-meeting/": "2026-11-11",
+    "https://hackaday.com/2026/11/10/hacking-the-sidekick-in-2026/": "2026-11-11",
+    "https://semiengineering.com/reducing-lithography-learning-cycles-to-accelerate-foplp-ramps/": "2026-11-11",
+    "https://semiengineering.com/test-struggles-to-keep-pace-with-ai/": "2026-11-11",
+    "https://semiengineering.com/which-passing-chips-need-more-testing/": "2026-11-11",
+    "https://semiengineering.com/ais-efficiency-challenge-for-the-semiconductor-industry/": "2026-11-11",
+    "https://semiengineering.com/the-definitive-afm-modes-handbook-2026-edition/": "2026-11-11",
+    "https://semiengineering.com/streaming-scan-network-test-over-pcie/": "2026-11-11",
+    "https://semiengineering.com/shrinking-hybrid-bonding-pitches-push-inspection-limits/": "2026-11-11",
+    "https://semiengineering.com/overcoming-silicon-photonics-process-control-challenges-in-the-ai-era/": "2026-11-11",
+    "https://www.photonics.com/Articles/TRUMPF-Reports-Approach-to-Improve-Welding-Speed/p5/a72752": "2026-11-11",
+    "https://www.photonics.com/Articles/Fiber-Sensing-Company-Optics11-Secures-56M-in/p5/a72751": "2026-11-11",
+    "https://semiengineering.com/hardware-based-location-checks-target-ai-chip-smuggling-texas-am/": "2026-11-12",
+    "https://semiengineering.com/embedded-ecc-protects-ai-weights-against-bit-flip-attacks-university-of-florida/": "2026-11-12",
+    "https://semiengineering.com/single-crystal-high-%ce%ba-dielectric-enables-low-power-2d-cfets-nus-et-al/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/floss-weekly-episode-883-telnet-broke-us/": "2026-11-12",
+    "https://semiengineering.com/optimized-e-beam-evaporation-reduces-metal-semiconductor-contact-degradation-rwth-aachen/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/modular-3d-printed-train-whistles-for-everyone/": "2026-11-12",
+    "https://www.scientificamerican.com/article/metal-rich-deep-sea-nodules-also-harbor-diverse-ocean-life/": "2026-11-12",
+    "https://www.scientificamerican.com/article/newfound-invisible-object-in-space-could-be-a-rare-supermassive-neutron-star/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/chip-8-the-pong-games-afoot/": "2026-11-12",
+    "https://www.technologyreview.com/2026/11/11/1148308/un-climate-talks/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/the-drawer-every-standing-desk-needs/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/ev-batteries-are-proving-hardier-than-expected/": "2026-11-12",
+    "https://spectrum.ieee.org/electric-ship-batteries": "2026-11-12",
+    "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/": "2026-11-12",
+    "https://spectrum.ieee.org/national-science-foundation-x-labs": "2026-11-12",
+    "https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/": "2026-11-12",
+    "https://hackaday.com/2026/11/11/why-engineers-are-forced-to-create-junk-designs/": "2026-11-12",
+    "https://www.scientificamerican.com/article/mountain-heights-across-the-country-are-about-to-change-gravity-is-to-blame/": "2026-11-12",
+    "https://www.scientificamerican.com/article/el-nino-will-push-temperatures-above-1-5-degrees-c-will-we-ever-come-back-down/": "2026-11-12",
+    "https://www.scientificamerican.com/podcast/episode/what-an-exceptionally-powerful-el-nino-could-mean-for-hurricanes-drought-and-flooding/": "2026-11-12",
+    "https://semiengineering.com/variable-length-prompts-on-chimera-gpnpu/": "2026-11-12",
+    "https://semiengineering.com/ucie-connectivity-for-2-5d-and-3d-multi-die-designs/": "2026-11-12",
+    "https://semiengineering.com/blog-review-nov-11-3/": "2026-11-12",
+    "https://www.photonics.com/Articles/Finetech-Appoints-Co-CEO-People-in-the-News/p5/a72757": "2026-11-12",
+    "https://hackaday.com/2026/11/10/this-coffee-machine-is-doomed/": "2026-11-12",
+    "https://www.photonics.com/Articles/RadianX-Raises-9M-For-Perovskite-Photovoltaics/p5/a72756": "2026-11-12",
+    "https://www.photonics.com/Articles/Industry-Collaboration-Seeks-to-Advance-Cyan/p5/a72755": "2026-11-12",
+    "https://www.photonics.com/Articles/Five-Companies-Partner-to-Develop/p5/a72758": "2026-11-12",
+    "https://hackaday.com/2026/11/12/watch-that-sound-your-own-chladni-plate/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/upgrade-your-coco-the-modern-way/": "2026-11-13",
+    "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/": "2026-11-13",
+    "https://www.scientificamerican.com/article/why-did-a-brooklyn-building-collapse-so-suddenly-experts-weigh-in/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/baochip-1x-a-mostly-open-22nm-soc-for-high-assurance-applications/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/just-use-qwiic-already/": "2026-11-13",
+    "https://spectrum.ieee.org/undersea-cables-arctic-european-commission": "2026-11-13",
+    "https://www.scientificamerican.com/article/can-a-microdose-of-ozempic-help-you-live-longer/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/usb-c-hub-or-nintendo-switch-2-dock-relax-its-both/": "2026-11-13",
+    "https://www.scientificamerican.com/article/ai-is-disrupting-math-is-science-next/": "2026-11-13",
+    "https://semiengineering.com/the-semiconductor-singularity/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/the-sextant-navigating-the-old-way/": "2026-11-13",
+    "https://www.scientificamerican.com/article/jensen-huang-leaving-nvidia-risks-a-brain-drain-from-the-ai-chipmaker/": "2026-11-13",
+    "https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/": "2026-11-13",
+    "https://hackaday.com/2026/11/12/tiny-transmitters-track-monarch-butterflies/": "2026-11-13",
+    "https://www.scientificamerican.com/article/this-asteroid-was-born-at-the-dawn-of-the-solar-system/": "2026-11-13",
+    "https://semiengineering.com/rethinking-memory-for-ai-inference/": "2026-11-13",
+    "https://semiengineering.com/beyond-bandwidth-ai-inference-is-reshaping-the-memory-wall/": "2026-11-13",
+    "https://semiengineering.com/the-semiconductor-singularity-when-ai-starts-accelerating-the-silicon-that-accelerates-ai/": "2026-11-13",
+    "https://semiengineering.com/designing-edge-ai-socs-at-near-threshold-why-foundation-ip-can-help-you-break-down-the-power-wall/": "2026-11-13",
+    "https://semiengineering.com/ip-integration-challenges-evolve/": "2026-11-13",
+    "https://semiengineering.com/the-memory-challenge-of-physical-ai/": "2026-11-13",
+    "https://semiengineering.com/introduction-to-fp8-formats-part-1/": "2026-11-13",
+    "https://semiengineering.com/risc-v-for-ai-breakthrough-or-bad-idea/": "2026-11-13",
+    "https://semiengineering.com/foundation-ip-for-the-ai-era-why-execution-shapes-soc-cost/": "2026-11-13",
+    "https://www.photonics.com/Articles/Xanadu-and-HyperLight-Reduce-Optical-Switch-Loss/p5/a72761": "2026-11-13",
+    "https://www.photonics.com/Articles/Semiconductor-Business-Helps-Carry-Jenoptik-to/p5/a72760": "2026-11-13"
+  },
+  "stories": [
+    {
+      "date": "2026-10-30",
+      "summary": "Teghaza 001, the oldest known Mars meteorite"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Trump administration rolls back methane rules"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Climate models' blind spot: warming feedback loops"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "AI-assisted proof of infinite Rogers-Ramanujan-type identities"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Op-ed: monitoring AI agents in real time"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Synaptic engineering: rewiring living brains"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Mesh harvests energy from heart tissue"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "HyLight's autonomous inspection airships"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "AI and trust in chip design: shift left, specifications, education"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Religions and the discovery of aliens"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Short news from The Download: DHS hack, Putin and Musk, touchscreen MacBook, Truth Social access, Greenland cable, xAI noise lawsuit, spinal cord transplant"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Short news: Lycurgus Cup recreated"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Short news: TrUDI microscopy, NVision and HyperLight"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Short news: chip industry pieces on 3D-IC workflow, thermal, Vinci funding, EU CRA, in-system test, regression triage"
+    },
+    {
+      "date": "2026-10-30",
+      "summary": "Short news: Hackaday on Mirage Solo, SylphideOS, Othello robot, Survival LLM, magnetic lock, Supercon"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "October on track to be the hottest ever recorded"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "World's biggest cities are sinking"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "REA, the viral AI reverse engineering tool"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Chip industry week in review: memory sold out, earnings, security"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Eating disorders on the rise and GLP-1 concerns"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Invisible, switchable tattoo ink"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Falling back and light for sleep"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Halloween science: strange-face mirror illusion, scary space objects, vampires"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Short news from The Download: Binance hack, Jensen Huang, Alphabet, Pentagon freezers, data center emissions, SpaceX, batteries, AI exemption"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Short news: Photonics Spectra, UCSD optogenetics and Kyushu modulators"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Hackaday roundup: Tang Nano retro computer, Jet Studio, electronic candle, FloppoScope, ADS-B receiver, PalmOS archive, syngas"
+    },
+    {
+      "date": "2026-11-02",
+      "summary": "Video Friday robots"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Ebola outbreak in the DRC becomes the fastest on record; Tumaini vaccine trial begins"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "The agentic web: AI agents as the internet's new users"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "PHP2Shell vulnerability and AI-driven bug hunting"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "$1 trillion tech selloff, AI bubble fears, Apple passes Nvidia, data centers in the midterms"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "How to tell if a voice recording is AI-generated"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Permanent daylight saving time and dark school commutes"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "What a Telecommunications Act 2.0 would look like"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Achille and Patroclo: a bull and a donkey's bond"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Short news: Ukraine and Russia alert apps hacked, Binance update, AI agent injects mouse brain, supermarket fridge attacks, lab-grown chocolate, hijacked billboards, interstellar space map"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Short news: AI math proofs, Anthropic's same-day release"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Short news: Marvell to acquire Lumentum"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Short news: Blue Laser Fusion, Pixxel Federal, Neuroscience 2026"
+    },
+    {
+      "date": "2026-11-03",
+      "summary": "Hackaday roundup: twin-EDF RC plane, Zener vs TVS diodes, unsafe solar light, pink tint in camera hacks, cellular modems, Analog Redial phone system, Chumby Static Radio"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Second wave of freezer-hijacking attacks across Europe"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "New York's first measles death in 30 years"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Trump's \"Super Intelligence\" rebrand as a loyalty test"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Reverse game theory for controlling AI agents"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Self-flying cargo planes and Reliable Robotics"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Inca child sacrifices and drugs"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Comets probably didn't seed life on Earth"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "The two-button eml calculator"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Kenyan startup Fastagger and AI for small businesses"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Short news: Nvidia and China, Android malware, Apple robot, Singles' Day AI tokens, gas plants, LHC, midterms and science"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Short news: octupolar magnetic order, optical magnetic control, INLEAP counter-drone lasers"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Short news: HZO capacitors, randomized caches, technical paper roundup"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Maker corner: toddler phone, ToothPaste, etching press, amateur radio in film, Supercon keynote"
+    },
+    {
+      "date": "2026-11-04",
+      "summary": "Fun read: do cats fart?"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "2026 midterms: Democrats sweep, voters reject AI data centers on ballots"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Texas: Hinojosa, Talarico and the future of the data center buildout"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "What the midterms mean for energy, climate and science"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Super El Niño flooding in Florida and the Southwest"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Early polar vortex collapse"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "SpaceX retiring Falcon 9 and the launch market"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "NASA's Swift telescope reenters"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "FLIP software helps JWST find planets"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Drone delivery hubs and neighbor backlash"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Glutamate and mental fatigue"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Short news from The Download: Google Search and schools, 3M settlement, Finland vault, Russian underground data centers, FlashProve, jet engines, dinosaur blood, Chernobyl dogs, Binance hackers, blended meat, PRIMA implant"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Short news: soybeans in the American diet"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Short news: IBM quantum interconnects, SPIE Prism finalists, IPG Photonics earnings"
+    },
+    {
+      "date": "2026-11-05",
+      "summary": "Hackaday roundup: laser harp, DOOM on toy camera, wax motor, go-kart, Renault clock hack, semiconductor history, retrocomputing winners"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "OpenAI's textGrain watermark and EU AI Act rules"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "BAAJA permitting reform bill and emissions debate"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Doctors and scientists elected in the midterms"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Samphire headband approved for PMDD anxiety"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Great Pacific Garbage Patch changing ocean color"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Scythian cannabis burial ritual, 2,800 years ago"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Ice age engravings in Cova de la Font Major"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Folding wings on airliners"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Edge AI, physical AI and college grads in chip design"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Single-board computer shortage and alternatives"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Short news: blood bank fridge hacks, Musk investigation, science cuts, ABB Robotics, Pentagon advisers lawsuit, AI introspection, JWST red dots, zeptoverse, trachoma"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Short news: Wolfspeed, MicroVision and FieldAI, color router, LOCUST X3 laser"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Maker corner: CardboardXR, Vortex display, KoaOS, Stockfish vs Deep Blue, jigsaw box joints"
+    },
+    {
+      "date": "2026-11-06",
+      "summary": "Fun read: George Clinton's Mothership at 50"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "ECHO implant that clears glucose from blood"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "NASA announces PROMISE lunar rover and Moon Base campaign"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Artemis II launch disrupted the ionosphere and GPS"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Planet Nine candidate and \"Planet 8.5\" doubts"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "The Great Unconformity explained"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "No material can be fully transparent"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Acorns predict Lyme-spreading ticks"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Brain change in tame foxes"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Blindness, music and pitch hearing"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Evaporative cooling for solar panels in Baghdad"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Tech selloff update and Big Tech scrutiny"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Chip industry week: HBM smuggling, Oracle-Tencent, Micron pause, Samsung campus"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Humanoid cleaning robot from Tau Robotics"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Kevin Roose on the AGI race"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Short news from The Download: freezer hacks, Claude speeding up successors, Mars volcanoes, Covid vaccine value, X-70, Cybertruck, RunPee"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Short news: mid-infrared photothermal microscopy"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Short news: Video Friday robots"
+    },
+    {
+      "date": "2026-11-09",
+      "summary": "Maker corner: VFD Space Invaders, Lillith, Game Boy dev cart, UNIX PC FPGA, e-paper adventure, dog wash, Supercon stream"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Data center backlash is about electricity, not just culture war"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Scott Wiener, Pelosi's successor, on AI regulation and the METR report"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Nvidia investigates Jensen Huang; Democrats plan Big Tech investigations"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Foundayo (orforglipron) shows large effect on sleep apnea"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Agentic robotics from UC Berkeley and Nvidia"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "\"Find My\" location verification for AI chips"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "OCI-MSA optical interconnect standard for AI"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "The climate case for AI and the COP in Antalya"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Pink noise during sleep boosts brain-cleaning fluid flow"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "HyperLogLog and the coin-flipping trick"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Short news: NY measles vaccine order extended"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Short news from The Download: Iran and subsea cables, Chinese AI labs, piracy, Phobos landing, Philadelphia robot saboteur"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Short news: Coherent revenue, G&H acquires IntraAction, Noak raises funding"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Short news: memory for physical AI"
+    },
+    {
+      "date": "2026-11-10",
+      "summary": "Maker corner: 3D printed car, Harley diagnostics, phone SDR, DTL chip, radon, satellite music"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "US may lose measles elimination status"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Fossil CO2 emissions set for rare dip as oil prices soar, plus COP31 context"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Cas12a2 CRISPR approach to destroy TP53-mutated cancer cells"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Virtual fruit fly brains playing Doom and trading bitcoin"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "CERN's niobium-tin magnets for the High-Luminosity LHC"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "AI strains chip testing: test insertions, which passing chips need more testing, hybrid bonding inspection"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Short news from The Download: Pentagon Moon patrol, GLP-1 blindness warnings, Australia rogue AI penalties, Flock camera bans, Booker Prize"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Short news: TRUMPF laser welding record"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Short news: Optics11 funding"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Short news: Newton, Leibniz and the calculus dispute"
+    },
+    {
+      "date": "2026-11-11",
+      "summary": "Hackaday roundup: satellite tracker, camera gesture game, central limit theorem, DeviceTree and Pi Zero 3W, Lobo MAX-80, Sidekick hack"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "OpenAI's Yang-Mills existence proof verified by Gross's committee"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Nvidia spy scandal update: chips, Schumer, Microsoft overtakes Nvidia"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "5G CATS hardware location checks against AI chip smuggling"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Record El Niño and the 1.5 degree threshold"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "COP31 in Antalya and the electrification pledge"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Life on deep-sea polymetallic nodules"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Overweight neutron star candidate J0008+0128"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "EV batteries holding up better than expected"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Xing Mobility's immersion-cooled marine battery"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "NOAA's new National Spatial Reference System"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "NSF X-Labs consortium partners"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Short news from The Download: Anthropic IPO, Yandex, rogue agents, Moderna, cell age reversal, Hormuz robots, lipid-first life, Voyager 1"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Short news: chip research papers and whitepapers"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Short news: Photonics Spectra on Finetech, RadianX, cyan OLEDs, mega-constellation"
+    },
+    {
+      "date": "2026-11-12",
+      "summary": "Maker corner: train whistles, CHIP-8 Pong, desk drawer, coffee machine DOOM, junk designs, FLOSS Weekly"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Nvidia privately said chip tracking is possible; Huang's exit and brain drain fears"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Brooklyn building collapse and likely causes"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "AI is disrupting math; is science next?"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Microdosing GLP-1 drugs for longevity"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Fiber optic cables across the Arctic"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Asteroid Ryugu may predate chondrules"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Memory for AI inference and physical AI; RISC-V debate"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Short news from The Download: AI bioweapon detector, Anduril satellite, Starshield limits, microplastics, invasive plants from orbit, cat-eye vision, metabolism-first life"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Short news: Xanadu and HyperLight, Jenoptik results"
+    },
+    {
+      "date": "2026-11-13",
+      "summary": "Maker corner: Chladni plate, CoCo 3 FPGA upgrade, Baochip-1x, QWIIC, Switch 2 hub dock, sextant, monarch butterfly transmitters"
+    }
+  ]
+}
